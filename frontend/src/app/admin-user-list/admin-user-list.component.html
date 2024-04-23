@@ -1,0 +1,73 @@
+<main>
+  @for (admin of admins; track admin) {
+  <section>
+    <div class="user-data">
+      <div class="label-value-pair">
+        <span class="label"><ng-container i18n>Name</ng-container>: </span>
+        <span>{{ admin.firstName }} {{ admin.lastName }}</span>
+      </div>
+      <div class="label-value-pair">
+        <span class="label"><ng-container i18n>E-Mail</ng-container>: </span>
+        <span>{{ admin.email }}</span>
+      </div>
+      @if(admin.company) {
+
+      <div class="label-value-pair">
+        <span class="label"
+          ><ng-container i18n>Unternehmen</ng-container>:
+        </span>
+        <span>{{ admin.company }}</span>
+      </div>
+      }
+
+      <div class="button-row">
+        <div>
+          <button mat-raised-button color="primary" (click)="edit(admin)">
+            <ng-container i18n>Bearbeiten</ng-container>
+            <mat-icon>edit</mat-icon>
+          </button>
+        </div>
+        <div>
+          <button mat-raised-button color="primary" (click)="delete(admin)">
+            <ng-container i18n>Löschen</ng-container>
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    @if (admin.campaigns && admin.campaigns.length > 0) {
+    <div class="campaigns">
+      <h4 i18n>Kampagnen von {{ admin.firstName }} {{ admin.lastName }}</h4>
+      @for (campaign of admin.campaigns; track campaign) {
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title
+            >{{ campaign.name }} ({{
+              campaign.language | uppercase
+            }})</mat-panel-title
+          >
+          <mat-panel-description
+            >{{ getCampaignStatus(campaign) | campaignStatus }},
+            <ng-container i18n>Erstellt am</ng-container>:
+            {{ campaign.creationDate | date }}</mat-panel-description
+          >
+        </mat-expansion-panel-header>
+        <pgt-campaign-meta
+          [campaign]="campaign"
+          [showName]="true"
+        ></pgt-campaign-meta>
+      </mat-expansion-panel>
+      }
+    </div>
+    } @if (!admin.campaigns || admin.campaigns.length == 0) {
+    <div class="campaigns">
+      <h4 i18n>Noch keine Kampagnen erfasst.</h4>
+    </div>
+    }
+  </section>
+  }
+  <button mat-raised-button color="primary" (click)="navigate('create-user')">
+    <ng-container i18n>Admin hinzufügen</ng-container>
+    <mat-icon>person_add</mat-icon>
+  </button>
+</main>

@@ -1,0 +1,73 @@
+@if (changePasswordForm && user) {
+<main>
+  <section>
+    <h1 i18n>Profil</h1>
+    <div class="campaignProperties">
+      <div>
+        <b><ng-container i18n>Name</ng-container>:</b> {{ user.lastName }}
+      </div>
+      <div>
+        <b><ng-container i18n>Vorname</ng-container>:</b> {{ user.firstName }}
+      </div>
+      <div>
+        <b><ng-container i18n>E-Mail Adresse</ng-container>:</b>
+        {{ user.email }}
+      </div>
+      @if (user.company) {
+      <div>
+        <b><ng-container i18n>Unternehmen/Universität/andere</ng-container>:</b>
+        {{ user.company }}
+      </div>
+      }
+      <div>
+        <b><ng-container i18n>Anzahl Kampagnen</ng-container>:</b>
+        {{ user.campaigns?.length }}
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3 i18n>Passwort ändern</h3>
+    <form [formGroup]="changePasswordForm" class="changePasswordForm">
+      <label>
+        <ng-container i18n>Neues Passwort</ng-container>:
+        <div class="formInputcontainer">
+          <input
+            type="password"
+            formControlName="newPassword"
+            autocomplete="new-password"
+          />
+          <pgt-form-error
+            [control]="changePasswordForm.controls['newPassword']"
+          ></pgt-form-error>
+        </div>
+      </label>
+      <label>
+        <ng-container i18n>Passwort wiederholen</ng-container>:
+        <div class="formInputcontainer">
+          <input
+            type="password"
+            formControlName="passwordRepeat"
+            autocomplete="new-password"
+          />
+          <pgt-form-error
+            [control]="changePasswordForm.controls['passwordRepeat']"
+          ></pgt-form-error>
+          <pgt-form-error [control]="changePasswordForm"></pgt-form-error>
+        </div>
+      </label>
+      <label
+        ><button
+          mat-raised-button
+          color="primary"
+          [disabled]="!changePasswordForm.valid"
+          (click)="changePassword(changePasswordForm)"
+          type="submit"
+        >
+          <ng-container i18n>Änderungen speichern</ng-container>
+          <mat-icon>save</mat-icon>
+        </button></label
+      >
+    </form>
+  </section>
+</main>
+}

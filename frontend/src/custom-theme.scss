@@ -1,0 +1,228 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use "@angular/material" as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+:root {
+  --bfh-text-color: #64788b;
+
+  /* lighter shades used for disabled buttons etc. or backgrounds */
+  --bfh-grey: #4b647d;
+  --bfh-lightgrey-1: #697d91;
+  --bfh-lightgrey-2: #a2aeb9;
+  --bfh-lightgrey-3: #c1c9d1;
+  --bfh-lightgrey-4: #e0e4e8;
+  --bfh-lightgrey-5: #eff1f3;
+
+  --bfh-darkgrey: #3c3c3c;
+
+  --bfh-orange: #ffbb02;
+  --bfh-lightorange-1: #ffcb3e;
+  --bfh-lightorange-2: #ffd666;
+
+  /* use these only in special cases
+  such as visualizations */
+  --bfh-darkgreen: #556455;
+  --bfh-green: #699673;
+  --bfh-lightgreen: #8caf82;
+
+  --bfh-darkblue: #506e96;
+  --bfh-blue: #699bbe;
+  --bfh-lightblue: #87b9c8;
+
+  --bfh-darkpurple: #645078;
+  --bfh-purple: #825a7d;
+  --bfh-lightpurple: #a087aa;
+
+  --bfh-darkocher: #786450;
+  --bfh-ocher: #96825f;
+  --bfh-lightocher: #b99164;
+
+  --bfh-darkred: #b41428;
+  --bfh-red: #d25a50;
+  --bfh-lightred: #e1917d;
+}
+
+$bfh-grey-palette: (
+  50: #edeff3,
+  100: #d1d8df,
+  200: #b4bec9,
+  300: #96a4b3,
+  400: #7f90a1,
+  500: #697d91,
+  600: #5c6e80,
+  700: #4c5a69,
+  800: #3c4853,
+  900: #2a333c,
+  contrast: (
+    50: var(--bfh-text-color),
+    100: var(--bfh-text-color),
+    200: var(--bfh-text-color),
+    300: var(--bfh-text-color),
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$bfh-orange-palette: (
+  50: #fef7df,
+  100: #fdeaae,
+  200: #fcdc7a,
+  300: #fbd041,
+  400: #fac400,
+  500: #f9ba00,
+  600: #faac00,
+  700: #fb9800,
+  800: #fb8700,
+  900: #fc6500,
+  contrast: (
+    50: var(--bfh-text-color),
+    100: var(--bfh-text-color),
+    200: var(--bfh-text-color),
+    300: var(--bfh-text-color),
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$dsl-headline-1: mat.define-typography-level(
+  $font-weight: normal,
+  $font-size: 2em,
+);
+$dsl-headline-2: mat.define-typography-level(
+  $font-weight: normal,
+  $font-size: 2em,
+);
+$dsl-headline-3: mat.define-typography-level(
+  $font-weight: bold,
+  $font-size: 1.5em,
+);
+$dsl-headline-4: mat.define-typography-level(
+  $font-weight: normal,
+  $font-size: 1.5em,
+);
+$dsl-headline-5: mat.define-typography-level(
+  $font-weight: bold,
+  $font-size: 1.2em,
+);
+$dsl-headline-6: mat.define-typography-level(
+  $font-weight: normal,
+  $font-size: 1.2em,
+);
+$dsl-subtitle-1: mat.define-typography-level(
+  $font-weight: bold,
+  $font-size: 1em,
+);
+$dsl-subtitle-2: mat.define-typography-level(
+  $font-weight: bold,
+  $font-size: 1em,
+);
+
+$dsl-body-1: mat.define-typography-level(
+  $font-weight: normal,
+  $font-size: 1em,
+);
+$dsl-body-2: mat.define-typography-level(
+  $font-weight: normal,
+  $font-size: 1em,
+);
+
+$dsl-caption: mat.define-typography-level(
+  $font-weight: normal,
+  $font-size: 0.8em,
+);
+
+$dsl-button: mat.define-typography-level(
+  $font-weight: bold,
+  $font-size: 1em,
+);
+
+$dsl-typography-config: mat.define-typography-config(
+  $headline-1: $dsl-headline-1,
+  $headline-2: $dsl-headline-2,
+  $headline-3: $dsl-headline-3,
+  $headline-4: $dsl-headline-4,
+  $headline-5: $dsl-headline-5,
+  $headline-6: $dsl-headline-6,
+  $subtitle-1: $dsl-subtitle-1,
+  $subtitle-2: $dsl-subtitle-2,
+  $body-1: $dsl-body-1,
+  $body-2: $dsl-body-2,
+  $caption: $dsl-caption,
+  $button: $dsl-button,
+  $font-family: "Unit, Lucida Sans, sans-serif",
+);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$dsl-ci-cd-primary: mat.define-palette($bfh-grey-palette, 500);
+$dsl-ci-cd-accent: mat.define-palette($bfh-orange-palette, 400);
+
+// optional
+$dsl-ci-cd-warn: mat.define-palette($bfh-grey-palette, 900);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$dsl-ci-cd-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $dsl-ci-cd-primary,
+      accent: $dsl-ci-cd-accent,
+      warn: $dsl-ci-cd-warn,
+    ),
+    typography: $dsl-typography-config,
+  )
+);
+
+$color: map-get(
+  $map: $dsl-ci-cd-theme,
+  $key: color,
+);
+$foreground: map-get(
+  $map: $color,
+  $key: foreground,
+);
+
+// override text of foreground map
+$bfh-text-color: #4b647d;
+$themed-foreground: map-merge(
+  $foreground,
+  (
+    text: $bfh-text-color,
+  )
+);
+
+// override foreground of $color map
+$themed-color: map-merge(
+  $color,
+  (
+    foreground: $themed-foreground,
+  )
+);
+
+// override color of theme map
+$dsl-ci-cd-theme: map-merge(
+  $dsl-ci-cd-theme,
+  (
+    color: $themed-color,
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($dsl-ci-cd-theme);

@@ -1,0 +1,7 @@
+textarea {
+  min-width: calc(100% - 6px);
+  max-width: calc(100% - 6px);
+  padding: 3px;
+  min-height: 50px;
+  font-size: 18px;
+}

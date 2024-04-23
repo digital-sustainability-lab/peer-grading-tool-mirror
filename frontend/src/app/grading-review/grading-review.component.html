@@ -1,0 +1,123 @@
+@if (peer() && campaign() && group() && gradingReviewData()) {
+<main>
+  <!-- prettier-ignore -->
+  <h1 i18n>Peer Grading Auswertung für {{ peer().lastName }} {{ peer().firstName }} vom {{ today | date }}</h1>
+  <section>
+    <pgt-group-meta [campaign]="campaign()" [group]="group()"></pgt-group-meta>
+  </section>
+
+  <section class="peerGradingReview">
+    <table class="grading-table">
+      <tr>
+        <th>
+          <div class="mobile">&nbsp;</div>
+        </th>
+        @for (criteria of campaign().criteria; track criteria) {
+        <th>{{ criteria.name }} ({{ criteria.weight }})</th>
+        }
+        <th i18n>Durchschnitt</th>
+      </tr>
+      <tr>
+        <th i18n>Fremdeinschätzung</th>
+        @for (criteria of campaign().criteria; track criteria) {
+        <td>
+          <div class="smallMobile">
+            {{ criteria.name }} ({{ criteria.weight }})
+          </div>
+          {{ gradingReviewData().thirdPartyAverages[criteria.criteriaId] }}
+        </td>
+        }
+        <th>
+          <div class="smallMobile" i18n>Durchschnitt</div>
+          {{ gradingReviewData().thirdPartyAverage }}
+        </th>
+      </tr>
+      <tr class="selfGrading">
+        <th i18n>Selbsteinschätzung</th>
+        @for (criteria of campaign().criteria; track criteria) {
+        <td>
+          <div class="smallMobile">
+            {{ criteria.name }} ({{ criteria.weight }})
+          </div>
+          {{ gradingReviewData().selfGradings[criteria.criteriaId] }}
+        </td>
+        }
+        <th>
+          <div class="smallMobile" i18n>Durchschnitt</div>
+          {{ gradingReviewData().selfAverage }}
+        </th>
+      </tr>
+    </table>
+
+    <div class="bigNumbers">
+      <div>
+        <div>
+          {{ gradingReviewData().thirdPartyAverage }}
+        </div>
+        <h3>
+          <span i18n>Fremdeinschätzung</span>
+          <pgt-tool-tip
+            text="Mittelwert aller Fremdeinschätzungen an Sie"
+            i18n-text
+          ></pgt-tool-tip>
+        </h3>
+      </div>
+      <div>
+        <div>
+          {{ gradingReviewData().groupAverage }}
+        </div>
+        <h3>
+          <span i18n>Gruppendurchschnitt</span>
+          <pgt-tool-tip
+            text="Mittelwert aller Fremdeinschätzungen der gesamten Gruppe"
+            i18n-text
+          ></pgt-tool-tip>
+        </h3>
+      </div>
+      <div>
+        <div>
+          {{ gradingReviewData().difference }}
+        </div>
+        <h3>
+          <span i18n>Abweichung</span>
+          <pgt-tool-tip
+            text="Differenz von Fremdeinschätzung und Gruppendurchschnitt"
+            i18n-text
+          ></pgt-tool-tip>
+        </h3>
+      </div>
+    </div>
+
+    <!-- comments -->
+
+    <div class="comments">
+      <h3 i18n>Erhaltene Kommentare</h3>
+      @if (gradingReviewData().comments.length > 0) {
+      <table class="comments-table">
+        <tr>
+          <th i18n>Autor*in</th>
+          <th i18n>Kommentar</th>
+        </tr>
+        @for (comment of gradingReviewData().comments; track $index) {
+        <tr>
+          <td>
+            {{ comment.fromPeer.firstName }} {{ comment.fromPeer.lastName }}
+          </td>
+          <td>{{ comment.text }}</td>
+        </tr>
+        }
+      </table>
+      } @else {
+      <p i18n>Keine Kommentare erhalten.</p>
+      }
+    </div>
+
+    <div class="campaignProperties">
+      <button mat-raised-button color="primary" (click)="exportPDF()">
+        <span i18n>Übersicht exportieren</span>
+        <mat-icon>picture_as_pdf</mat-icon>
+      </button>
+    </div>
+  </section>
+</main>
+}

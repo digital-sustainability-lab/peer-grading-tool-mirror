@@ -1,0 +1,1813 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="de" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="148994054464892903" datatype="html">
+        <source>Kampagnen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/admin-dashboard.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/nav/nav.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="324039438457724755" datatype="html">
+        <source>Neue Kampagne</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/admin-dashboard.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="866150487752002125" datatype="html">
+        <source>Noch keine Kampagnen erfasst.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-dashboard/admin-dashboard.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8953033926734869941" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/criteria/criteria.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8115083664628466958" datatype="html">
+        <source>E-Mail</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/group/group.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8268300407529288538" datatype="html">
+        <source>Unternehmen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6920196637619975735" datatype="html">
+        <source>Bearbeiten</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4580399730639224598" datatype="html">
+        <source>Löschen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">180</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/criteria/criteria.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/warn-dialog/warn-dialog.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1600200837901137629" datatype="html">
+        <source>Kampagnen von <x id="INTERPOLATION" equiv-text="{{ admin.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ admin.lastName }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5831006527609601287" datatype="html">
+        <source>Erstellt am</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-meta/campaign-meta.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3568611547183987528" datatype="html">
+        <source>Admin hinzufügen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-user-list/admin-user-list.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7445727375467179455" datatype="html">
+        <source>Möchten Sie den Admin <x id="PH" equiv-text="admin.firstName"/> <x id="PH_1" equiv-text="admin.lastName"/> wirklich löschen?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-user-list/admin-user-list.component.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2303431859447969272" datatype="html">
+        <source>Admin <x id="PH" equiv-text="admin.firstName"/> <x id="PH_1" equiv-text="admin.lastName"/> wurde gelöscht.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin-user-list/admin-user-list.component.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1422475179742333305" datatype="html">
+        <source>Anschauen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6698345456572227275" datatype="html">
+        <source>Übersicht exportieren (pdf)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7888663402173408194" datatype="html">
+        <source>Übersicht exportieren (xlsx)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4726680577873029296" datatype="html">
+        <source>Einladungs-Mails versenden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3239409325543525257" datatype="html">
+        <source>Ausstehende Peers erinnern</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="484530245492508482" datatype="html">
+        <source>Kampagne beenden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2633354721965090977" datatype="html">
+        <source>Ergebnisse an Teilnehmer senden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7513868734558781432" datatype="html">
+        <source>Möchten Sie die Kampagne &quot;<x id="PH" equiv-text="this.campaign.name"/>&quot; wirklich beginnen und allen Teilnehmern die Einladungs-Mails zusenden?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8970769016607182045" datatype="html">
+        <source>Senden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.ts</context>
+          <context context-type="linenumber">307</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4671522202255003440" datatype="html">
+        <source>Kampagne &quot;<x id="PH" equiv-text="this.campaign.name"/>&quot; erfolgreich begonnen.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="226657693733047849" datatype="html">
+        <source>Anzahl gesendete Mails: Teilnehmer: <x id="PH" equiv-text="mailsSent.peerMailsSent"/>; Admins: <x id="PH_1" equiv-text="mailsSent.adminMailsSent"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1312495133528980872" datatype="html">
+        <source>Kampagne konnte nicht begonnen werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4133404516164716913" datatype="html">
+        <source>Fehlermeldung: <x id="PH" equiv-text="error.message"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">222</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">251</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.ts</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.ts</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">271</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5291131217127643398" datatype="html">
+        <source>Möchten Sie die Kampagne &quot;<x id="PH" equiv-text="this.campaign.name"/>&quot; wirklich beenden? Ausstehende Gradings können nicht mehr eingetragen werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1398340068808580123" datatype="html">
+        <source>Kampagne &quot;<x id="PH" equiv-text="this.campaign.name"/>&quot; erfolgreich beendet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4593404792107765023" datatype="html">
+        <source>Kampagne konnte nicht beendet werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2339859518729013169" datatype="html">
+        <source>Möchten Sie die Ergebnismails der Kampagne &quot;<x id="PH" equiv-text="this.campaign.name"/>&quot; wirklich senden?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="276805941644554846" datatype="html">
+        <source>Ergebnismails der Kampagne &quot;<x id="PH" equiv-text="this.campaign.name"/>&quot; erfolgreich gesendet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4549376042101674054" datatype="html">
+        <source>Mails konnten nicht gesendet werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2267942452207719526" datatype="html">
+        <source>Möchten Sie den Peers mit ausstehenden Gradings der Kampagne &quot;<x id="PH" equiv-text="this.campaign.name"/>&quot; eine Erinnerungsmail zusenden?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2966694173534104991" datatype="html">
+        <source>Erinnerungsmails der Kampagne &quot;<x id="PH" equiv-text="this.campaign.name"/>&quot; erfolgreich gesendet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8236155416982798746" datatype="html">
+        <source>Bei noch nicht begonnenen Kampagnen können keine Erinnerungsnachrichten gesendet werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8167056596325872315" datatype="html">
+        <source>Bei kompletten Kampagnen können keine Erinnerungsnachrichten gesendet werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5569998651984243861" datatype="html">
+        <source>Bei beendeten Kampagnen können keine Erinnerungsnachrichten gesendet werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1896542050890556082" datatype="html">
+        <source>Benachrichtigt alle Teilnehmer der Kampagne, welche das Grading noch nicht gesendet haben.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5749965877120669657" datatype="html">
+        <source>Kampagne wurde noch nicht begonnen.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4835261391146573897" datatype="html">
+        <source>Gradings können nachträglich nicht mehr gesendet werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5047205630282431105" datatype="html">
+        <source>Abschlussmails erneut senden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">189</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="532967875486468055" datatype="html">
+        <source>Möchten Sie die Kampagne &quot;<x id="PH" equiv-text="this.campaign.name"/>&quot; wirklich löschen?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">205</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1015292043830113993" datatype="html">
+        <source>Kampagne &quot;<x id="PH" equiv-text="this.campaign.name"/>&quot; wurde gelöscht</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">214</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6284578965922177415" datatype="html">
+        <source>Kampagne &quot;<x id="PH" equiv-text="this.campaign.name"/>&quot; konnte nicht gelöscht werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">220</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6173326813998787548" datatype="html">
+        <source>Kampagne konnte nicht exportiert werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-buttons/campaign-buttons.component.ts</context>
+          <context context-type="linenumber">249</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8135974377384470279" datatype="html">
+        <source>Kampagnenname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-meta/campaign-meta.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/group-meta/group-meta.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5611592591303869712" datatype="html">
+        <source>Status</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-meta/campaign-meta.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7542722704589838770" datatype="html">
+        <source>Beginn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-meta/campaign-meta.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="135348361569826093" datatype="html">
+        <source>Ende</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-meta/campaign-meta.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="51574765818008149" datatype="html">
+        <source>Sprache</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-meta/campaign-meta.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8389950226641446536" datatype="html">
+        <source>Bewertungsskala</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-meta/campaign-meta.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/group-meta/group-meta.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5345606951966171945" datatype="html">
+        <source>Anzahl Gruppen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-meta/campaign-meta.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="355042596280215131" datatype="html">
+        <source>Anzahl Teilnehmende</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-meta/campaign-meta.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1353655605499148227" datatype="html">
+        <source>Abschlussgrad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-meta/campaign-meta.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2991378928298415592" datatype="html">
+        <source>Kriterien</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-meta/campaign-meta.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/group-meta/group-meta.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7514830336085076099" datatype="html">
+        <source>Gewichtung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-meta/campaign-meta.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/criteria/criteria.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/criteria/criteria.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/group-meta/group-meta.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="550878102049006704" datatype="html">
+        <source>Übersicht über Gruppe <x id="INTERPOLATION" equiv-text="{{ group.number }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1435949458210452789" datatype="html">
+        <source>Grading an</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/single-row/single-row.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6418169731934933415" datatype="html">
+        <source>Grading von</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8998936338363495526" datatype="html">
+        <source>Erhaltener Fremddurchschnitt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5402757956803371494" datatype="html">
+        <source>Grading an <x id="INTERPOLATION" equiv-text="{{ toPeer.lastName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ toPeer.firstName }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8260687587700861116" datatype="html">
+        <source>Fremddurchschnitt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3604879601837178900" datatype="html">
+        <source>Fremddurchschnitte</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1327302134726196371" datatype="html">
+        <source>Punkte</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8873147951502717470" datatype="html">
+        <source>Kommentare</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8887841239732166807" datatype="html">
+        <source>Keine Kommentare erfasst.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2758943692812105313" datatype="html">
+        <source>Gruppendurchschnitt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6944781272616426285" datatype="html">
+        <source>Mittelwert der Fremddurchschnitte.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1617905667360014448" datatype="html">
+        <source>Peers mit ausstehenden Gradings</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/campaign-group-summary.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7183839708728502965" datatype="html">
+        <source>Kommentare von <x id="INTERPOLATION" equiv-text="{{ peer.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ peer.lastName }}"/>:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/group-comments/group-comments.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2386562836462177590" datatype="html">
+        <source>an <x id="INTERPOLATION" equiv-text="{{ comment.toUser.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ comment.toUser.lastName }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-group-summary/group-comments/group-comments.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2708383281929305763" datatype="html">
+        <source>Kampagnen-Übersicht</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/campaign-summary/campaign-summary.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7247594953500831530" datatype="html">
+        <source>Peer Grading Tool - E-Mail bestätigen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/confirm-email/confirm-email.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7775421822720457833" datatype="html">
+        <source> Ihre E-Mail-Adresse &quot;<x id="INTERPOLATION" equiv-text="{{ responseMessage().email }}"/>&quot; wurde bestätigt. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/confirm-email/confirm-email.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1421877322421948874" datatype="html">
+        <source>Die E-Mail-Adresse konnte nicht bestätigt werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/confirm-email/confirm-email.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5468498821136067137" datatype="html">
+        <source>Zum Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/confirm-email/confirm-email.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/http-error/http-error.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6278737578310385428" datatype="html">
+        <source>Vorname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/group/group.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3112560000750552205" datatype="html">
+        <source>Nachname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/group/group.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6043880785270370070" datatype="html">
+        <source>Unternehmen/Universität/andere</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="932876642658778900" datatype="html">
+        <source>Änderungen speichern</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8114075222355682868" datatype="html">
+        <source>Admin erstellen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3651984886413153743" datatype="html">
+        <source>Neues Passwort</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6057821346666596338" datatype="html">
+        <source>Passwort</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.ts</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2983073948722841992" datatype="html">
+        <source>Neues Passwort wiederholen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5242658385575909219" datatype="html">
+        <source>Passwort wiederholen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4028295370197925352" datatype="html">
+        <source>Speichern fehlgeschlagen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.ts</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.ts</context>
+          <context context-type="linenumber">199</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3598418554410823360" datatype="html">
+        <source>Admin <x id="PH" equiv-text="admin.firstName"/> <x id="PH_1" equiv-text="admin.lastName"/> gespeichert.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.ts</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2119383351189489515" datatype="html">
+        <source>Benutzer konnte nicht erstellt werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.ts</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8315916316916783323" datatype="html">
+        <source>Änderungen gespeichert</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.ts</context>
+          <context context-type="linenumber">204</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8024638142899097257" datatype="html">
+        <source>Benutzer konnte nicht gespeichert werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-admin-user/create-admin-user.component.ts</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8309142447526398004" datatype="html">
+        <source>Kampagne erstellen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2808220107988051155" datatype="html">
+        <source>Kampagne bearbeiten</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3571742932207204800" datatype="html">
+        <source>Die Kampagne kann nach ihrem Abschluss nicht mehr geändert werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="987862415018324230" datatype="html">
+        <source>Änderungen an laufenden Kampagnen sind teilweise gesperrt.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2258060347097525516" datatype="html">
+        <source>Allgemein</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8830437956973831885" datatype="html">
+        <source>Maximale Punktzahl pro Kriterium</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="998885822267033420" datatype="html">
+        <source>Die Kampagnensprache bestimmt, in welcher Sprache die Mails der Kampagne versendet werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="606064170842427614" datatype="html">
+        <source>Kampagnenbeginn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/group-meta/group-meta.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3310053160371224543" datatype="html">
+        <source>Kampagnenende</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1915542441718966505" datatype="html">
+        <source>Bewertungskriterien</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3975687843854722264" datatype="html">
+        <source>Gruppenübersicht</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3538041776568869611" datatype="html">
+        <source>Vorlage herunterladen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4946378265729032719" datatype="html">
+        <source>Personenliste importieren</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="261899352544665063" datatype="html">
+        <source>Neue Gruppe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2263829113686566481" datatype="html">
+        <source>Fehler beim Importieren</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="425361162900602537" datatype="html">
+        <source>Nummer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2854123663314832793" datatype="html">
+        <source>Speichern</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.html</context>
+          <context context-type="linenumber">210</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3313528406596871463" datatype="html">
+        <source>Deutsch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8957931169022166336" datatype="html">
+        <source>Englisch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5351831606305016264" datatype="html">
+        <source>Sollen die Kriterien auf die Standard-Kriterien in <x id="PH" equiv-text="languageName"/> zurückgesetzt werden?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6818809209641032132" datatype="html">
+        <source>Bestätigen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="854280190761376608" datatype="html">
+        <source>Sprache geändert</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3190807849920649249" datatype="html">
+        <source>Bestimmte Änderungen an laufenden Kampagnen lösen automatisch Mails aus.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">212</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6520959911211028811" datatype="html">
+        <source>Fortfahren</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2590295681509395485" datatype="html">
+        <source>Schliessen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">228</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/snack-bar.service.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/snack-bar.service.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="861668433274164677" datatype="html">
+        <source>Kampagne &quot;<x id="PH" equiv-text="campaign.name"/>&quot; wurde gespeichert</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">241</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">260</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6605928789609363183" datatype="html">
+        <source>Kampagne konnte nicht gespeichert werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">269</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4684765712510245529" datatype="html">
+        <source>Maximale Punktzahl muss eine Ganzzahl sein.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">286</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="919462732348669764" datatype="html">
+        <source>Keine Kriterien erfasst.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">291</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2457748068859657410" datatype="html">
+        <source>Keine Gruppen erfasst.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6347348652899885029" datatype="html">
+        <source>Keine Teilnehmenden in Gruppe <x id="PH" equiv-text="group.number"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">301</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8783317891333380096" datatype="html">
+        <source>Peers mit identischer E-Mail Adresse in Gruppe <x id="PH" equiv-text="group.number"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">310</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="699458901073556103" datatype="html">
+        <source>Ungültige Peer Daten in Gruppe <x id="PH" equiv-text="group.number"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/create-campaign.service.ts</context>
+          <context context-type="linenumber">319</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8518663890166241761" datatype="html">
+        <source>Kriterienname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/criteria/criteria.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="623302995999546215" datatype="html">
+        <source>Hinzufügen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/criteria/criteria.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7918230987164454155" datatype="html">
+        <source>Ist das CSV gemäss der Vorlage aufgebaut?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/csv.service.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3529389660805111972" datatype="html">
+        <source>Zeile</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/csv.service.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5281526450999952207" datatype="html">
+        <source>kein Nachname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/csv.service.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="694430396264190972" datatype="html">
+        <source>kein Vorname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/csv.service.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4786830543503117817" datatype="html">
+        <source>invalide E-mail Adresse</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/csv.service.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6744085369014225667" datatype="html">
+        <source>invalide Gruppennummer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/csv.service.ts</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9059876262028534897" datatype="html">
+        <source>Hinweis: Die Gruppen wurden automatisch nummeriert.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/csv.service.ts</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6316142576317715035" datatype="html">
+        <source>Gruppe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/group/group.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="176260631529448257" datatype="html">
+        <source>Gruppe löschen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/group/group.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2006339176762586941" datatype="html">
+        <source>Person hinzufügen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/group/group.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2642668126979542852" datatype="html">
+        <source>Matrikelnummer (optional)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-campaign/group/group.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6750465088055022656" datatype="html">
+        <source>Kampagnenübersicht downloaden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/excel/excel.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdf/pdf-summary/pdf-summary.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1446181378145519766" datatype="html">
+        <source>Der Download sollte gleich starten.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/excel/excel.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdf/pdf-review/pdf-review.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdf/pdf-summary/pdf-summary.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5330960665652650981" datatype="html">
+        <source>Kampagnenuebersicht.xlsx</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/excel/excel.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4982541340850746484" datatype="html">
+        <source>Feld darf nicht leer sein.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-error/form-error.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8881629026941611750" datatype="html">
+        <source>Der Wert muss mindestens <x id="INTERPOLATION" equiv-text="{{ control.errors[&quot;min&quot;].min }}"/> sein.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-error/form-error.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2536281828397564786" datatype="html">
+        <source>Ungültige E-Mail-Adresse.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-error/form-error.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4126246347685425499" datatype="html">
+        <source>Ungültige Eingabe.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-error/form-error.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2077085035479394370" datatype="html">
+        <source>Passwörter stimmen nicht überein.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-error/form-error.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3758918088575818489" datatype="html">
+        <source>E-Mails stimmen nicht überein.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-error/form-error.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6537092309358643538" datatype="html">
+        <source>Peer Grading Auswertung für <x id="INTERPOLATION" equiv-text="{{ peer().lastName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ peer().firstName }}"/> vom <x id="INTERPOLATION_2" equiv-text="{{ today | date }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5030829345161940560" datatype="html">
+        <source>Durchschnitt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/single-row/single-row.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6719862220877646500" datatype="html">
+        <source>Fremdeinschätzung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8336295545982123408" datatype="html">
+        <source>Selbsteinschätzung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="757295924336581179" datatype="html">
+        <source>Mittelwert aller Fremdeinschätzungen an Sie</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3029723177600454722" datatype="html">
+        <source>Mittelwert aller Fremdeinschätzungen der gesamten Gruppe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="447751789078236166" datatype="html">
+        <source>Abweichung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7293948923957808582" datatype="html">
+        <source>Differenz von Fremdeinschätzung und Gruppendurchschnitt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5455118973392620099" datatype="html">
+        <source>Erhaltene Kommentare</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5347306123818121441" datatype="html">
+        <source>Autor*in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2137405200624328487" datatype="html">
+        <source>Kommentar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/single-comment/single-comment.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="225136691800947110" datatype="html">
+        <source>Keine Kommentare erhalten.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="598464111170380863" datatype="html">
+        <source>Übersicht exportieren</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2807374295353573668" datatype="html">
+        <source>Review konnte nicht exportiert werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading-review/grading-review.component.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2678753239571128071" datatype="html">
+        <source>Peer Grading Formular für <x id="INTERPOLATION" equiv-text="{{ peer().lastName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ peer().firstName }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5755665282285113414" datatype="html">
+        <source>Kriterium</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1832793843692213152" datatype="html">
+        <source>Gewicht</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3809788054093947155" datatype="html">
+        <source>Gradings können noch nicht bearbeitet werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3056112329268803956" datatype="html">
+        <source>Gradings können nicht mehr bearbeitet werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5098721536908690380" datatype="html">
+        <source>Gradings erfolgreich gesendet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.ts</context>
+          <context context-type="linenumber">282</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8840612557533179474" datatype="html">
+        <source>Gradings konnten nicht gespeichert werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.ts</context>
+          <context context-type="linenumber">288</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7640918008321105776" datatype="html">
+        <source>Gradings können nicht gesendet werden. Werte müssen zwischen 1 und <x id="PH" equiv-text="this.campaign().maxPoints"/> liegen.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.ts</context>
+          <context context-type="linenumber">294,296</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7699675702721078532" datatype="html">
+        <source>Die Gradings und der Kommentar können nach dem Senden nicht mehr bearbeitet werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/grading.component.ts</context>
+          <context context-type="linenumber">306</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2745229489052876275" datatype="html">
+        <source> Kommentar an Dozent/Dozentin <x id="INTERPOLATION" equiv-text="{{ toUser.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ toUser.lastName }}"/>
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/single-comment/single-comment.component.html</context>
+          <context context-type="linenumber">2,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="180148206852383866" datatype="html">
+        <source>Kommentar an <x id="INTERPOLATION" equiv-text="{{ toUser.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ toUser.lastName }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/grading/single-comment/single-comment.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3645275540502020746" datatype="html">
+        <source>Gruppennummer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/group-meta/group-meta.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3425036242098849762" datatype="html">
+        <source>Gruppengrösse</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/group-meta/group-meta.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2271541723486916201" datatype="html">
+        <source>Kampagnenzeitraum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/group-meta/group-meta.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="441231109620599971" datatype="html">
+        <source>Sie sind in Begriff die Seite zu verlassen. Nicht gespeicherte Daten gehen verloren.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/guards/pending-changes.guard.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="496551592979694168" datatype="html">
+        <source>Verlassen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/guards/pending-changes.guard.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2361265238320887165" datatype="html">
+        <source>Abmelden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="420087024221106702" datatype="html">
+        <source>Sie sind</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5363940464046088994" datatype="html">
+        <source>Profil</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/nav/nav.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4506803456670769268" datatype="html">
+        <source>Admins</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/nav/nav.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6228342588105187906" datatype="html">
+        <source>Fehler bei Ihrer Anfrage</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/http-error/http-error.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8930526198656004715" datatype="html">
+        <source>Zurück</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/http-error/http-error.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7855604283854332023" datatype="html">
+        <source>Peer Grading Tool Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1726363342938046830" datatype="html">
+        <source>About</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2454050363478003966" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2736731364720267618" datatype="html">
+        <source>Registrieren</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4621838623642706243" datatype="html">
+        <source>Anmeldung erforderlich.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3002175377457408358" datatype="html">
+        <source>Grading Review downloaden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdf/pdf-review/pdf-review.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3366466853252639517" datatype="html">
+        <source>Review.pdf</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdf/pdf-review/pdf-review.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7684083960892079963" datatype="html">
+        <source>Kampagnenuebersicht.pdf</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdf/pdf-summary/pdf-summary.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3058753411867304231" datatype="html">
+        <source>erstellt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pipes/campaign-status.pipe.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3212897670958599811" datatype="html">
+        <source>läuft</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pipes/campaign-status.pipe.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2028584632864103823" datatype="html">
+        <source>abgeschlossen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pipes/campaign-status.pipe.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4279758900778145054" datatype="html">
+        <source>E-Mail Adresse</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="207603973243470426" datatype="html">
+        <source>Anzahl Kampagnen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6187296087604906467" datatype="html">
+        <source>Passwort ändern</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="234707134716067658" datatype="html">
+        <source>Passwort konnte nicht geändert werden.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6332827336259492293" datatype="html">
+        <source>Peer Grading Tool - Registrieren</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3367592830654824806" datatype="html">
+        <source>E-Mail wiederholen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8275249718945260785" datatype="html">
+        <source>Daten gesendet. Sie sollten eine E-Mail erhalten.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/register/register.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9175670018185396326" datatype="html">
+        <source>Fehler</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/snack-bar.service.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/snack-bar.service.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/snack-bar.service.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4573848760437315575" datatype="html">
+        <source>Zugriff nur für Administratoren gestattet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/user.service.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7380973124924827780" datatype="html">
+        <source>Username oder Passwort falsch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/user.service.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5041354590769758251" datatype="html">
+        <source>Admin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/user.service.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3680756314363420370" datatype="html">
+        <source>Super User*in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/user.service.ts</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4840619178649010344" datatype="html">
+        <source>Teilnehmer*in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/user.service.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="238388551978425333" datatype="html">
+        <source>Warnung!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/warn-dialog/warn-dialog.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7624133960269641605" datatype="html">
+        <source>Abbrechen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/warn-dialog/warn-dialog.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

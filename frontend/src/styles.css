@@ -1,0 +1,27 @@
+* {
+  font-family: "UnitOT-Light", "Lucida Sans", sans-serif;
+}
+
+body {
+  background-color: var(--bfh-lightgrey-3);
+  font-size: 18px;
+  background-size: 100px;
+  margin: 0;
+}
+
+button.mdc-button {
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: "UnitOT-Light";
+  src: url("assets/unitRoundedWebPro-Light.woff");
+}
+html,
+body {
+  height: 100%;
+}
+input,
+select {
+  border-radius: 4px;
+}

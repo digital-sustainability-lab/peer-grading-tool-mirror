@@ -1,0 +1,76 @@
+section > div,
+section form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+section {
+  border-bottom: 1px solid var(--bfh-orange);
+  margin-top: 15px;
+}
+
+section label {
+  flex: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.groupTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-right: 0;
+}
+
+.button-container {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+::ng-deep .mat-expansion-panel .mat-expansion-panel-header {
+  padding: 10px;
+}
+
+::ng-deep .mat-expansion-panel .mat-expansion-panel-header-title,
+::ng-deep .mat-expansion-panel .mat-content,
+::ng-deep .mat-expansion-panel button {
+  margin: 0 !important;
+}
+
+::ng-deep .mat-expansion-panel .mat-expansion-panel-body {
+  padding: 0 10px 10px;
+}
+
+@media screen and (max-width: 810px) {
+  table tr {
+    padding: 10px;
+    width: calc(100% - 20px);
+  }
+  table tr td {
+    padding: 0;
+  }
+
+  table tr td:last-child {
+    padding-top: 10px;
+  }
+  table tr td .mobile,
+  table tr td div {
+    width: 50%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .peerForm label {
+    flex: 100%;
+  }
+
+  table tr td {
+    display: flex;
+  }
+}

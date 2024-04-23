@@ -1,0 +1,15 @@
+# Notes:
+# Images are cleaned up daily, only latest is kept!
+# See `Settings > Packages & Registries`.
+
+# CONFIGURATION
+variables:
+  IMAGE_NAME: "$DSL_APP_NAME"
+  IMAGE_TAGS: "$CI_COMMIT_SHA latest" # could be left out, default
+  DOCKERFILE_PATH: "./"
+
+include:
+  - project: "digital-sustainability-lab/ci-lib"
+    ref: main
+    file:
+      - "templates/dsl_build_simple.yml"

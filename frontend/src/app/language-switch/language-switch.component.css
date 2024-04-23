@@ -1,0 +1,9 @@
+.locale-button-text-container {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.locale-img {
+  height: 20px;
+}

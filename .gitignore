@@ -1,0 +1,12 @@
+*/node_modules/
+*/.vscode/
+.vscode/
+/.idea/
+*/.angular/
+*/dist/
+*/.env
+*/document.pdf
+*.db
+.env.compose
+
+backend/prisma/seed.ts

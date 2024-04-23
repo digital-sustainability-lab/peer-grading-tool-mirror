@@ -1,0 +1,96 @@
+@if (adminForm) {
+<main>
+  <form [formGroup]="adminForm" class="adminForm" autocomplete="off">
+    <label>
+      <ng-container i18n>Vorname</ng-container>:
+      <div class="formInputcontainer">
+        <input type="text" formControlName="adminFirstName" />
+        <pgt-form-error
+          [control]="adminForm.controls['adminFirstName']"
+        ></pgt-form-error>
+      </div>
+    </label>
+    <label>
+      <ng-container i18n>Nachname</ng-container>:
+      <div class="formInputcontainer">
+        <input type="text" formControlName="adminLastName" />
+        <pgt-form-error
+          [control]="adminForm.controls['adminLastName']"
+        ></pgt-form-error>
+      </div>
+    </label>
+    <label>
+      <ng-container i18n>Unternehmen/Universität/andere</ng-container>:
+      <div class="formInputcontainer">
+        <input type="text" formControlName="adminCompany" />
+        <pgt-form-error
+          [control]="adminForm.controls['adminCompany']"
+        ></pgt-form-error>
+      </div>
+    </label>
+    <label>
+      <ng-container i18n>E-Mail</ng-container>:
+      <div class="formInputcontainer">
+        <input type="text" formControlName="adminEmail" />
+        <pgt-form-error
+          [control]="adminForm.controls['adminEmail']"
+        ></pgt-form-error>
+      </div>
+    </label>
+    <label>
+      {{ getPasswordText() }}:
+      <div class="formInputcontainer">
+        <input
+          type="password"
+          formControlName="adminPW"
+          autocomplete="new-password"
+        />
+        <pgt-form-error
+          [control]="adminForm.controls['adminPW']"
+        ></pgt-form-error>
+      </div>
+    </label>
+    <label>
+      {{ getPasswordRepeatText() }}:
+      <div class="formInputcontainer">
+        <input
+          type="password"
+          formControlName="adminPWRepeat"
+          autocomplete="new-password"
+        />
+        <pgt-form-error
+          [control]="adminForm.controls['adminPWRepeat']"
+        ></pgt-form-error>
+        @if (adminForm.controls['adminPWRepeat'].touched) {
+        <pgt-form-error [control]="adminForm"></pgt-form-error>
+        }
+      </div>
+    </label>
+    <label
+      >@if (admin() != null) {
+      <button
+        mat-raised-button
+        color="primary"
+        [disabled]="!adminForm.valid"
+        (click)="updateAdmin(adminForm)"
+        type="submit"
+      >
+        <ng-container i18n>Änderungen speichern</ng-container>
+        <mat-icon>save</mat-icon>
+      </button>
+      }@if (admin() == null) {
+      <button
+        mat-raised-button
+        color="primary"
+        [disabled]="!adminForm.valid"
+        (click)="createAdmin(adminForm)"
+        type="submit"
+      >
+        <ng-container i18n>Admin erstellen</ng-container>
+        <mat-icon>save</mat-icon>
+      </button>
+      }</label
+    >
+  </form>
+</main>
+}

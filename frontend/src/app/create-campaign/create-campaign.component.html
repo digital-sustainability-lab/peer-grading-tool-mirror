@@ -1,0 +1,216 @@
+@if (createCampaignService.campaign()) {
+<main>
+  @if (!createCampaignService.campaignExisted()) {
+  <h1 i18n>Kampagne erstellen</h1>
+  } @else {
+  <h1 i18n>Kampagne bearbeiten</h1>
+  } @if (campaignForm) {
+  <form [formGroup]="campaignForm" (keydown.enter)="$event.preventDefault()">
+    <section class="allgemein">
+      @if (createCampaignService.campaignStatus() == 'abgeschlossen') {
+      <div>
+        <ng-container i18n
+          >Die Kampagne kann nach ihrem Abschluss nicht mehr geändert
+          werden.</ng-container
+        >
+      </div>
+      } @if (createCampaignService.campaignStatus() == 'läuft') {
+      <div i18n>Änderungen an laufenden Kampagnen sind teilweise gesperrt.</div>
+      }
+      <h2 i18n>Allgemein</h2>
+      <div>
+        <label>
+          <div><ng-container i18n>Kampagnenname</ng-container>:</div>
+          <div class="formInputcontainer">
+            <input type="text" formControlName="name" />
+            <pgt-form-error
+              [control]="campaignForm.controls['name']"
+            ></pgt-form-error>
+          </div>
+        </label>
+        <label>
+          <div>
+            <ng-container i18n>Maximale Punktzahl pro Kriterium</ng-container>:
+          </div>
+          <div class="formInputcontainer">
+            <input type="number" step="1" formControlName="maxPoints" />
+            <pgt-form-error
+              [control]="campaignForm.controls['maxPoints']"
+            ></pgt-form-error>
+          </div>
+        </label>
+        <label>
+          <div>
+            <ng-container i18n>Sprache</ng-container>:
+            <pgt-tool-tip
+              text="Die Kampagnensprache bestimmt, in welcher Sprache die Mails der Kampagne versendet werden."
+              i18n-text
+            ></pgt-tool-tip>
+          </div>
+          <div class="formInputcontainer">
+            <select formControlName="language">
+              @for (language of languageSelection; track language) {
+              <option [value]="language.lang">
+                {{ language.text }}
+              </option>
+              }
+            </select>
+          </div>
+        </label>
+        @if (createCampaignService.campaignExisted()) {
+        <label>
+          <div><ng-container i18n>Status</ng-container>:</div>
+          <div class="formInputcontainer">
+            <div>
+              {{ createCampaignService.campaignStatus() | campaignStatus }}
+            </div>
+          </div>
+        </label>
+        }
+        <label>
+          <div><ng-container i18n>Erstellt am</ng-container>:</div>
+          <div class="formInputcontainer">
+            {{ createCampaignService.campaign().creationDate | date }}
+          </div>
+        </label>
+        @if (createCampaignService.campaign().openingDate) {
+        <label>
+          <div><ng-container i18n>Kampagnenbeginn</ng-container>:</div>
+          <div class="formInputcontainer">
+            {{ createCampaignService.campaign().openingDate | date }}
+          </div>
+        </label>
+        } @if (createCampaignService.campaign().closingDate) {
+        <label>
+          <div><ng-container i18n>Kampagnenende</ng-container>:</div>
+          <div class="formInputcontainer">
+            {{ createCampaignService.campaign().closingDate | date }}
+          </div>
+        </label>
+        }
+      </div>
+    </section>
+    <section>
+      <h2 i18n>Bewertungskriterien</h2>
+      <pgt-criteria
+        [campaign]="createCampaignService.campaign()"
+        [campaignStatus]="createCampaignService.campaignStatus()"
+      ></pgt-criteria>
+    </section>
+    <section>
+      <div class="groupOverview">
+        <h2 i18n>Gruppenübersicht</h2>
+        <div>
+          <button mat-raised-button color="primary">
+            <a href="assets/template.csv" target="_blank" i18n
+              >Vorlage herunterladen</a
+            >
+            &nbsp;<mat-icon>download</mat-icon>
+          </button>
+          <button
+            mat-raised-button
+            color="primary"
+            [disabled]="
+              createCampaignService.campaignStatus() == 'abgeschlossen'
+            "
+          >
+            <label
+              class="input file-input"
+              [class.disabled]="
+                createCampaignService.campaignStatus() == 'abgeschlossen'
+              "
+              ><input
+                type="file"
+                enctype="multipart/form-data"
+                (change)="importCSV($event)"
+                [disabled]="
+                  createCampaignService.campaignStatus() == 'abgeschlossen'
+                "
+                accept=".csv"
+              /><mat-icon>upload</mat-icon>&nbsp;<ng-container i18n
+                >Personenliste importieren</ng-container
+              ></label
+            >
+          </button>
+
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="addGroup()"
+            [disabled]="
+              createCampaignService.campaignStatus() == 'abgeschlossen'
+            "
+            type="submit"
+          >
+            <ng-container i18n>Neue Gruppe</ng-container>
+            <mat-icon>group_add</mat-icon>
+          </button>
+        </div>
+        @if (createCampaignService.csvErrors().length > 0) {
+        <div class="errors">
+          <ng-container i18n>Fehler beim Importieren</ng-container>: @for (error
+          of createCampaignService.csvErrors(); track error) {
+          <p>
+            {{ error }}
+          </p>
+          }
+        </div>
+        }
+      </div>
+
+      <table>
+        <tr>
+          <th i18n>Nummer</th>
+          <th i18n>Anzahl Teilnehmende</th>
+          <th></th>
+        </tr>
+        @for (group of createCampaignService.campaign().groups; track group) {
+        <tr>
+          <td>{{ group.number }}</td>
+          <td>{{ group.peers.length }}</td>
+          <td>
+            <button
+              mat-raised-button
+              color="primary"
+              [disabled]="
+                createCampaignService.campaignStatus() == 'abgeschlossen'
+              "
+              (click)="createCampaignService.removeGroup(group)"
+            >
+              <ng-container i18n>Löschen</ng-container>
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+        }
+      </table>
+    </section>
+    @for (group of createCampaignService.campaign().groups; track group) {
+    <pgt-group
+      [group]="group"
+      [campaign]="createCampaignService.campaign()"
+      [campaignStatus]="createCampaignService.campaignStatus()"
+    ></pgt-group>
+    }
+    <section class="submitSection">
+      @if (createCampaignService.saving()) {
+      <mat-spinner color="primary" [diameter]="40"></mat-spinner>
+      }
+      <button
+        mat-raised-button
+        color="primary"
+        id="submitButton"
+        type="submit"
+        [disabled]="
+          !campaignForm.valid ||
+          createCampaignService.campaignStatus() == 'abgeschlossen'
+        "
+        (click)="submit()"
+      >
+        <ng-container i18n>Speichern</ng-container> <mat-icon>save</mat-icon>
+      </button>
+    </section>
+  </form>
+  }
+</main>
+}

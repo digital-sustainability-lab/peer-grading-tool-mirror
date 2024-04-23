@@ -1,0 +1,49 @@
+.changePasswordForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.changePasswordForm label {
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.changePasswordForm label div {
+  width: 70%;
+}
+
+.changePasswordForm label div input {
+  width: calc(100% - 14px);
+}
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 20px 20px 60px 20px;
+}
+input {
+  background-color: var(--bfh-lightgrey-4);
+  border: none;
+  padding: 7px;
+  font-size: 18px;
+  display: block;
+  width: 800px;
+}
+.error {
+  color: var(--bfh-darkred);
+}
+
+@media screen and (max-width: 480px) {
+  .changePasswordForm label {
+    display: block;
+  }
+
+  .changePasswordForm label .formInputcontainer {
+    width: 100%;
+  }
+}

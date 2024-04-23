@@ -1,0 +1,59 @@
+{
+  "overviewSheetTitle": "overview",
+  "groupSheetTitle": "group {groupNumber}",
+
+  "yes": "yes",
+  "no": "no",
+
+  "general": "in general",
+  "campaignName": "campaign name",
+  "status": "status",
+  "maxPoints": "maximum number of points",
+  "numberOfGroups": "number of groups",
+  "exportDate": "date of export",
+  "createdOn": "created on",
+  "start": "start",
+  "end": "end",
+
+  "criteria": "criteria",
+  "name": "name",
+  "weight": "weighting",
+
+  "groupOverview": "overview of group",
+  "number": "number",
+  "numberOfPeers": "number of participants",
+  "gradingCompletionPercentage": "completeness in %",
+  "numberOfComments": "number of comments",
+  "gradingsComplete": "gradings complete?",
+  "groupAverage": "group average",
+
+  "student": "student",
+  "email": "e-mail",
+  "matriculationNumber": "matriculation number",
+  "groupNumber": "group number",
+  "peerAssessmentAverageOfPeers": "peer grading average",
+  "deviation": "deviation",
+
+  "overviewOfGroup": "overview of group {groupNumber}",
+
+  "peer": "participant",
+  "lastName": "last name",
+  "firstName": "first name",
+  "gradingsSent": "gradings sent?",
+  "selfAverage": "self assessment average",
+  "peerAssessmentAverage": "peer grading average",
+
+  "comments": "comments",
+  "commentFrom": "comment from",
+  "commentFor": "comment for",
+  "comment": "comment",
+
+  "gradingOverview": "overview of gradings",
+  "gradingTo": "grading to",
+  "gradingFrom": "grading from",
+
+  "gradingsFromCriteria": "individual gradings for the criterion {criteriaName}",
+
+  "gradingsFromPeer": "individual gradings from {fullName}",
+  "criterion": "criterion"
+}

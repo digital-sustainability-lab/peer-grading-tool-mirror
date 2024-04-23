@@ -1,0 +1,18 @@
+@if (campaign(); as campaign) {
+<main id="overview">
+  <h1 i18n>Kampagnen-Übersicht</h1>
+  <section>
+    <pgt-campaign
+      [campaign]="campaign"
+      viewState="summary"
+      (reloadEvent)="onReloadEvent($event)"
+    ></pgt-campaign>
+  </section>
+  @for (group of campaign?.groups; track group) {
+  <pgt-campaign-group-summary
+    [group]="group"
+    [campaign]="campaign"
+  ></pgt-campaign-group-summary>
+  }
+</main>
+}

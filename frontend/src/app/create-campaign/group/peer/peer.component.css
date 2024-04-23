@@ -1,0 +1,38 @@
+.buttons {
+  display: flex;
+  gap: 0.5em;
+  justify-content: flex-end;
+}
+
+label input {
+  border: none;
+  padding: 7px;
+  outline: 1px solid var(--bfh-lightgrey-2);
+  font-size: 18px;
+  display: block;
+}
+
+@media screen and (max-width: 810px) {
+  td {
+    padding: 0;
+  }
+
+  td:last-child {
+    padding-top: 10px;
+  }
+  td .mobile,
+  td div {
+    width: 50%;
+    display: block;
+  }
+  td .buttons {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  table tr td {
+    display: flex;
+  }
+}

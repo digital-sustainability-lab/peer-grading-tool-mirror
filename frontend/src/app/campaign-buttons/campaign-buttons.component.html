@@ -1,0 +1,104 @@
+<div class="button-super-container">
+  <div class="button-container">
+    @if (viewState == 'dashboard') {
+    <button mat-raised-button color="primary" (click)="toSummary()">
+      <ng-container i18n>Anschauen</ng-container>
+      <mat-icon>remove_red_eye</mat-icon>
+    </button>
+    }
+    <button mat-raised-button color="primary" (click)="edit()">
+      <ng-container i18n>Bearbeiten</ng-container> <mat-icon>edit</mat-icon>
+    </button>
+    @if (viewState == 'summary') {
+    <button mat-raised-button color="warn" (click)="deleteCampaign()">
+      <ng-container i18n>Löschen</ng-container> <mat-icon>delete</mat-icon>
+    </button>
+    }
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="exportCampaignAsPdf()"
+      class="tablet"
+    >
+      <ng-container i18n>Übersicht exportieren (pdf)</ng-container>
+      <mat-icon>picture_as_pdf</mat-icon>
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="exportCampaignAsExcel()"
+      class="tablet"
+    >
+      <ng-container i18n>Übersicht exportieren (xlsx)</ng-container>
+      <mat-icon>table_chart</mat-icon>
+    </button>
+  </div>
+  <div class="button-container">
+    <button
+      mat-raised-button
+      color="accent"
+      (click)="startCampaign()"
+      [disabled]="getCampaignStatus() != 'erstellt'"
+      matTooltip="Kampagne wurde bereits begonnen."
+      [matTooltipDisabled]="getCampaignStatus() == 'erstellt'"
+    >
+      <ng-container i18n>Einladungs-Mails versenden</ng-container>
+      <mat-icon>play_arrow</mat-icon>
+    </button>
+
+    <button
+      mat-raised-button
+      color="accent"
+      [disabled]="getCampaignStatus() != 'läuft' || gradingsComplete()"
+      (click)="sendReminderMails()"
+      [matTooltip]="getReminderTooltip()"
+    >
+      <ng-container i18n>Ausstehende Peers erinnern</ng-container>
+      <mat-icon>replay</mat-icon>
+    </button>
+
+    <button
+      mat-raised-button
+      color="accent"
+      (click)="endCampaign()"
+      [disabled]="getCampaignStatus() != 'läuft'"
+      [matTooltip]="getEndingTooltip()"
+      [matTooltipDisabled]="getCampaignStatus() == 'abgeschlossen'"
+    >
+      <ng-container i18n>Kampagne beenden</ng-container>
+      <mat-icon>stop</mat-icon>
+    </button>
+
+    <button
+      mat-raised-button
+      color="accent"
+      (click)="sendCampaignResults()"
+      [disabled]="getCampaignStatus() == 'erstellt'"
+      matTooltip="Kampagne wurde noch nicht begonnen."
+      [matTooltipDisabled]="getCampaignStatus() != 'erstellt'"
+    >
+      <ng-container i18n>Ergebnisse an Teilnehmer senden</ng-container>
+      <mat-icon>mail</mat-icon>
+    </button>
+  </div>
+  <div class="button-container">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="exportCampaignAsPdf()"
+      class="desktop-mobile"
+    >
+      <ng-container i18n>Übersicht exportieren (pdf)</ng-container>
+      <mat-icon>picture_as_pdf</mat-icon>
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="exportCampaignAsExcel()"
+      class="desktop-mobile"
+    >
+      <ng-container i18n>Übersicht exportieren (xlsx)</ng-container>
+      <mat-icon>table_chart</mat-icon>
+    </button>
+  </div>
+</div>

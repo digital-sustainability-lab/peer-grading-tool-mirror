@@ -1,0 +1,54 @@
+<main>
+  <section>
+    <div class="titleAndLink">
+      <h1 i18n>Peer Grading Tool Login</h1>
+
+      <div class="lang-about-buttons">
+        <pgt-language-switch></pgt-language-switch>
+        <button mat-raised-button color="primary" (click)="navigateToAbout()">
+          <ng-container i18n>About</ng-container> <mat-icon>help</mat-icon>
+        </button>
+      </div>
+    </div>
+    @if (loginForm) {
+    <form [formGroup]="loginForm">
+      <label>
+        <ng-container i18n>E-Mail</ng-container>:
+        <div classs="formInputComtainer">
+          <input type="text" formControlName="email" />
+          <pgt-form-error
+            [control]="loginForm.controls['email']"
+          ></pgt-form-error>
+        </div>
+      </label>
+      <label>
+        <ng-container i18n>Passwort</ng-container>:
+        <div class="formInputComtainer">
+          <input type="password" formControlName="password" />
+          <pgt-form-error
+            [control]="loginForm.controls['password']"
+          ></pgt-form-error>
+        </div>
+      </label>
+      <div class="login-buttons">
+        <button
+          mat-raised-button
+          color="primary"
+          [disabled]="!loginForm.valid"
+          (click)="login(loginForm)"
+        >
+          <ng-container i18n>Login</ng-container> <mat-icon>send</mat-icon>
+        </button>
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="navigateToRegister()"
+        >
+          <ng-container i18n>Registrieren</ng-container>
+          <mat-icon>person_add</mat-icon>
+        </button>
+      </div>
+    </form>
+    }
+  </section>
+</main>

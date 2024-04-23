@@ -1,0 +1,22 @@
+<button mat-raised-button [matMenuTriggerFor]="menu" class="menu-item">
+  <div class="locale-button-text-container">
+    <img
+      [src]="'assets/icon-' + currentLocale + '.png'"
+      [alt]="currentLocale"
+      class="locale-img"
+    />
+    {{ getDisplayedLocaleString(currentLocale) }}
+  </div>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="changeLocale('de')" class="menu-item">
+    <div class="locale-button-text-container">
+      <img src="assets/icon-de.png" alt="de" class="locale-img" /> DE
+    </div>
+  </button>
+  <button mat-menu-item (click)="changeLocale('en')" class="menu-item">
+    <div class="locale-button-text-container">
+      <img src="assets/icon-en.png" alt="en" class="locale-img" /> EN
+    </div>
+  </button>
+</mat-menu>
