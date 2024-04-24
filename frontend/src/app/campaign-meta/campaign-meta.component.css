@@ -1,0 +1,41 @@
+.campaign-data {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.campaign-data > div {
+  width: calc(33.33% - 0.5em);
+}
+
+.campaign-data p {
+  margin: 0;
+}
+
+@media screen and (max-width: 810px) {
+  .campaign-data {
+    flex-wrap: wrap;
+  }
+  .campaign-data > div {
+    width: calc(50% - 0.5em);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .campaign-data {
+    flex-direction: column;
+  }
+  .campaign-data > div {
+    width: 100%;
+  }
+
+  .campaign-data > div > p {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .campaign-data > div > p > b,
+  .campaign-data > div > p > span {
+    width: calc(50% - 0.25em);
+  }
+}

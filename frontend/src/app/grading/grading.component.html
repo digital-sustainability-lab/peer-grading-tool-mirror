@@ -1,0 +1,77 @@
+@if (campaign() && group() && peer()) {
+<main>
+  <!-- prettier-ignore -->
+  <h1 i18n>Peer Grading Formular für {{ peer().lastName }} {{ peer().firstName }}</h1>
+  @if (campaign().name && group().number) {
+  <section>
+    <pgt-group-meta
+      [group]="group()"
+      [campaign]="campaign()"
+      [showCriteria]="false"
+    ></pgt-group-meta>
+  </section>
+  }
+  <section>
+    @if (gradingForm) {
+    <form [formGroup]="gradingForm">
+      <table>
+        <tr>
+          <th><span i18n>Kriterium</span> (<span i18n>Gewicht</span>)</th>
+          @for (criteria of campaign().criteria; track criteria) {
+          <th>{{ criteria.name }} ({{ criteria.weight }})</th>
+          }
+          <th i18n>Durchschnitt</th>
+        </tr>
+
+        @for (toPeer of group().peers; track toPeer) {
+        <pgt-single-row
+          [toPeer]="toPeer"
+          [peer]="peer()"
+          [campaign]="campaign()"
+          [gradingsFormGroup]="gradingForm.controls['gradings']"
+          class="singleRow"
+        ></pgt-single-row>
+        }
+      </table>
+
+      <div class="comments">
+        <h3 i18n>Kommentare</h3>
+        @for (user of adminUsers(); track user) {
+        <pgt-single-comment
+          [commentFormGroup]="gradingForm.controls['comments']"
+          [peer]="peer()"
+          [isAdmin]="true"
+          [toUser]="user"
+        ></pgt-single-comment>
+        } @for (user of peerUsers(); track user) {
+        <pgt-single-comment
+          [commentFormGroup]="gradingForm.controls['comments']"
+          [peer]="peer()"
+          [toUser]="user"
+        ></pgt-single-comment>
+        }
+      </div>
+
+      <div>
+        @if (tooEarly()) {
+        <span i18n>Gradings können noch nicht bearbeitet werden.</span>
+        } @if (formDisabled()) {
+        <span i18n>Gradings können nicht mehr bearbeitet werden.</span>
+        }
+      </div>
+      <div>
+        <button
+          mat-raised-button
+          color="primary"
+          type="button"
+          (click)="submit(gradingForm)"
+          [disabled]="sendButtonDisabled()"
+        >
+          <span i18n>Senden</span>&nbsp;<mat-icon>send</mat-icon>
+        </button>
+      </div>
+    </form>
+    }
+  </section>
+</main>
+}

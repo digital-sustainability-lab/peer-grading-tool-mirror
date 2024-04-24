@@ -1,0 +1,94 @@
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+.titleAndLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+h1 {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.lang-about-buttons {
+  display: flex;
+  gap: 0.5em;
+}
+
+section {
+  width: 500px;
+  margin-bottom: 100px;
+  padding: 50px 20px 30px;
+  background-color: #fff;
+  border-bottom: 1px solid var(--bfh-orange);
+  border-radius: 6px;
+}
+
+section form {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+
+form label {
+  justify-content: space-between;
+  align-items: center;
+}
+
+form label input {
+  width: calc(100% - 14px);
+  font-size: 18px;
+  padding: 7px;
+  background-color: var(--bfh-lightgrey-4);
+  border: none;
+}
+
+form label input:focus {
+  outline: 1px solid var(--bfh-grey);
+}
+
+form label button {
+  float: right;
+}
+
+.formInputcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.login-buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 810px) {
+  h1 {
+    margin-bottom: 20px;
+  }
+  section {
+    width: calc(90% - 40px);
+    display: block;
+  }
+  section form {
+    flex-direction: column;
+  }
+  section form label {
+    display: block;
+  }
+  section form label input {
+    width: calc(100% - 14px);
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}

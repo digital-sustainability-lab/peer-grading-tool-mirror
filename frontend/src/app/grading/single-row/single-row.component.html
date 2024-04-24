@@ -1,0 +1,29 @@
+<tr [class.selfGrading]="peer.peerId === toPeer.peerId">
+  <td>
+    <div class="mobile"><span i18n>Grading an</span>&nbsp;</div>
+
+    <div>{{ toPeer.lastName }} {{ toPeer.firstName }}</div>
+  </td>
+  @for (crit of campaign.criteria; track crit) {
+  <td>
+    <div class="mobile">{{ crit.name }} ({{ crit.weight }})</div>
+    <input
+      required
+      [formControl]="
+        gradingsFormGroup.controls[toPeer.peerId].controls[crit.criteriaId]
+      "
+      type="number"
+      step="1"
+      min="1"
+      [max]="campaign.maxPoints"
+      [placeholder]="'1 - ' + campaign.maxPoints"
+    />
+  </td>
+  }
+  <td>
+    <div class="mobile" i18n>Durchschnitt</div>
+    <div>
+      {{ getPeersAverage(toPeer) | number : "1.0-2" }}
+    </div>
+  </td>
+</tr>

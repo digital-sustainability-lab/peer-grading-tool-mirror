@@ -1,0 +1,62 @@
+tr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+tr td {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+}
+
+tr td input {
+  display: block;
+  width: calc(100% - 14px);
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid var(--bfh-grey);
+}
+
+input:focus {
+  outline: 1px solid var(--bfh-grey);
+}
+
+input.ng-touched.ng-invalid {
+  outline: 1px solid var(--bfh-darkred);
+}
+
+@media (max-width: 900px) {
+  .mobile {
+    width: 40%;
+  }
+
+  th {
+    font-size: 16px;
+  }
+
+  tr td {
+    display: flex;
+  }
+
+  tr td div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  tr {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  tr td:first-child div,
+  tr td:last-child div {
+    display: inline;
+  }
+
+  tr td {
+    display: block;
+  }
+}

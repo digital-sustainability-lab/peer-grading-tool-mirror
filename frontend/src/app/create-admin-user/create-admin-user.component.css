@@ -1,0 +1,51 @@
+.adminForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.adminForm label {
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  align-items: center;
+}
+
+.adminForm label .formInputcontainer {
+  width: 70%;
+}
+
+.adminForm label div input {
+  width: calc(100% - 14px);
+}
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 20px 20px 60px 20px;
+}
+input {
+  background-color: var(--bfh-lightgrey-4);
+  border: none;
+  padding: 7px;
+  font-size: 18px;
+  display: block;
+}
+.error {
+  color: var(--bfh-darkred);
+}
+
+@media screen and (max-width: 810px) {
+}
+
+@media screen and (max-width: 480px) {
+  .adminForm label {
+    display: block;
+  }
+
+  .adminForm label .formInputcontainer {
+    width: 100%;
+  }
+}

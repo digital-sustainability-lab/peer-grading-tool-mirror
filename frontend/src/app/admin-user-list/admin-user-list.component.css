@@ -1,0 +1,82 @@
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 20px 20px 60px 20px;
+}
+
+section {
+  border-bottom: 1px solid var(--bfh-orange);
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+section .user-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label-value-pair {
+  width: 27%;
+  gap: 0.5em;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.button-row {
+  display: flex;
+  width: 280px;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.5em;
+}
+
+@media screen and (max-width: 810px) {
+  .label-value-pair {
+    display: flex;
+    flex-direction: column;
+    flex: 28%;
+  }
+  .button-row {
+    flex-direction: column;
+    flex: 20%;
+  }
+  .button-row button {
+    width: 100%;
+  }
+  .label-value-pair span {
+    line-break: anywhere;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section .user-data {
+    flex-direction: column;
+  }
+  .label-value-pair {
+    flex-direction: row;
+    padding: 5px 0;
+    width: 100%;
+  }
+  .button-row {
+    flex-direction: row;
+    padding: 5px 0;
+    width: 100%;
+  }
+  .button-row button {
+    width: unset;
+  }
+  .button-row div {
+    width: 50%;
+  }
+  .label-value-pair span {
+    line-break: normal;
+    display: block;
+    width: 50%;
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "overviewSheetTitle": "Übersicht",
+  "groupSheetTitle": "Gruppe {groupNumber}",
+
+  "yes": "Ja",
+  "no": "Nein",
+
+  "general": "Allgemein",
+  "campaignName": "Kampagnenname",
+  "status": "Status",
+  "maxPoints": "Maximale Punktzahl",
+  "numberOfGroups": "Anzahl Gruppen",
+  "exportDate": "Exportdatum",
+  "createdOn": "Erstellt am",
+  "start": "Kampagnenbeginn",
+  "end": "Kampagnenende",
+
+  "criteria": "Kriterien",
+  "name": "Name",
+  "weight": "Gewichtung",
+
+  "groupOverview": "Gruppenübersicht",
+  "number": "Nummer",
+  "numberOfPeers": "Anzahl Teilnehmer",
+  "gradingCompletionPercentage": "Anzahl Gradings in %",
+  "numberOfComments": "Anzahl Kommentare",
+  "gradingsComplete": "Gradings komplett?",
+  "groupAverage": "Gruppendurchschnitt",
+
+  "student": "Studierende*r",
+  "email": "E-Mail",
+  "matriculationNumber": "Matrikelnr.",
+  "groupNumber": "Gruppennr.",
+  "peerAssessmentAverageOfPeers": "Fremddurchschnitt d. Peers",
+  "deviation": "Abweichung vom Gruppendurchschnitt",
+
+  "overviewOfGroup": "Übersicht Gruppe {groupNumber}",
+
+  "peer": "Teilnehmer",
+  "lastName": "Nachname",
+  "firstName": "Vorname",
+  "gradingsSent": "Gradings gesendet?",
+  "selfAverage": "Eigendurchschnitt",
+  "peerAssessmentAverage": "Fremddurchschnitt",
+
+  "comments": "Kommentare",
+  "commentFrom": "Kommentar von",
+  "commentFor": "Kommentar an",
+  "comment": "Kommentar",
+
+  "gradingOverview": "Grading-Übersicht",
+  "gradingTo": "Grading an",
+  "gradingFrom": "Grading von",
+
+  "gradingsFromCriteria": "Einzelne Gradings beim Kriterium {criteriaName}",
+
+  "gradingsFromPeer": "Einzelne Gradings von {fullName}",
+  "criterion": "Kriterium"
+}

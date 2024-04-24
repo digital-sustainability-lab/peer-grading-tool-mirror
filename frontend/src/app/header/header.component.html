@@ -1,0 +1,30 @@
+@if (user && user !== null) {
+<header>
+  <div>
+    <span class="title">Peer Grading Tool</span>
+    <div class="smallMobile buttons">
+      <button mat-raised-button color="primary" (click)="logout()">
+        <ng-container i18n>Abmelden</ng-container> <mat-icon>logout</mat-icon>
+      </button>
+      <pgt-language-switch></pgt-language-switch>
+    </div>
+    <div class="userInfo">
+      <div>
+        <ng-container i18n>Sie sind</ng-container>:
+        <b>
+          {{ user.firstName }} {{ user.lastName }}<br />({{
+            userService.userRolesToString(user)
+          }})
+        </b>
+      </div>
+      <div class="desktop buttons">
+        <pgt-language-switch></pgt-language-switch>
+        <button mat-raised-button color="primary" (click)="logout()">
+          <ng-container i18n>Abmelden</ng-container> <mat-icon>logout</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  <pgt-nav [user]="user"></pgt-nav>
+</header>
+}

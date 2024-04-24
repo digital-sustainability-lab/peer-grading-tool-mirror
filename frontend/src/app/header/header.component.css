@@ -1,0 +1,71 @@
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 20px 20px 60px 20px;
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+header > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 1em;
+}
+
+header .title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.userInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  gap: 1em;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5em;
+}
+
+/* must be after .buttons selector */
+.smallMobile {
+  display: none;
+}
+
+@media screen and (max-width: 810px) {
+}
+
+@media screen and (max-width: 480px) {
+  header > div {
+    display: flex;
+  }
+
+  .userInfo {
+    flex-direction: column-reverse;
+  }
+
+  .smallMobile {
+    display: block;
+  }
+
+  .buttons.smallMobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop {
+    display: none;
+  }
+}

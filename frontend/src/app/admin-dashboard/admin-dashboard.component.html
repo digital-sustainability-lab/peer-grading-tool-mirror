@@ -1,0 +1,21 @@
+<main>
+  <h1 i18n>Kampagnen</h1>
+  <section>
+    <button mat-raised-button color="primary" (click)="createCampaign()">
+      <ng-container i18n>Neue Kampagne</ng-container> <mat-icon>add</mat-icon>
+    </button>
+  </section>
+  @for (campaign of campaigns(); track campaign) {
+  <section>
+    <pgt-campaign
+      [campaign]="campaign"
+      viewState="dashboard"
+      (reloadEvent)="onReloadEvent($event)"
+    ></pgt-campaign>
+  </section>
+  } @if (campaigns().length == 0) {
+  <section>
+    <h3 i18n>Noch keine Kampagnen erfasst.</h3>
+  </section>
+  }
+</main>

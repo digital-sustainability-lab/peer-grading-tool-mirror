@@ -1,0 +1,32 @@
+.meta-container {
+  display: flex;
+  gap: 1em;
+}
+
+.meta-container > div {
+  width: calc(50% - 1em);
+}
+
+p {
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .meta-container {
+    flex-direction: column;
+  }
+
+  .meta-container > div {
+    width: 100%;
+  }
+
+  .meta-container > div > p {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .meta-container > div > p > b,
+  .meta-container > div > p > span {
+    width: calc(50% - 0.25em);
+  }
+}

@@ -1,0 +1,24 @@
+<main>
+  <section>
+    <div class="titleAndLink">
+      <h1 i18n>Peer Grading Tool - E-Mail bestätigen</h1>
+
+      <div class="lang-about-buttons">
+        <pgt-language-switch></pgt-language-switch>
+      </div>
+    </div>
+    @if (responseMessage()) {
+    <p i18n>
+      Ihre E-Mail-Adresse "{{ responseMessage().email }}" wurde bestätigt.
+    </p>
+    } @else {
+    <p i18n>Die E-Mail-Adresse konnte nicht bestätigt werden.</p>
+    }
+    <div class="login-buttons">
+      <button mat-raised-button color="primary" (click)="navigateToLogin()">
+        <ng-container i18n>Zum Login</ng-container>
+        <mat-icon>subdirectory_arrow_left</mat-icon>
+      </button>
+    </div>
+  </section>
+</main>

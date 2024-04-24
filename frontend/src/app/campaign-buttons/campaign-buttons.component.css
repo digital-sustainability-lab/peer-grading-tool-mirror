@@ -1,0 +1,52 @@
+.button-super-container {
+  display: flex;
+  gap: 1em;
+}
+
+.button-container {
+  width: calc(33.33% - 0.666em);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.tablet {
+  display: none;
+}
+
+@media screen and (max-width: 810px) {
+  .button-super-container {
+    flex-wrap: wrap;
+  }
+
+  .button-container {
+    width: calc(50% - 0.5em);
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .desktop-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button-super-container {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .button-container {
+    width: 100%;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop-mobile {
+    display: block;
+  }
+}

@@ -1,0 +1,50 @@
+<section>
+  <mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <div class="groupTitle">
+            <h3><ng-container i18n>Gruppe</ng-container> {{ group.number }}</h3>
+            <button
+              mat-raised-button
+              color="primary"
+              [disabled]="campaignStatus == 'abgeschlossen'"
+              (click)="removeGroup()"
+            >
+              <ng-container i18n>Gruppe löschen</ng-container>
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div></mat-panel-title
+        >
+      </mat-expansion-panel-header>
+      <div class="button-container">
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="addPeer()"
+          [disabled]="campaignStatus == 'abgeschlossen'"
+        >
+          <ng-container i18n>Person hinzufügen</ng-container>
+          <mat-icon>person_add</mat-icon>
+        </button>
+      </div>
+      <table>
+        <tr>
+          <th i18n>Vorname</th>
+          <th i18n>Nachname</th>
+          <th i18n>Matrikelnummer (optional)</th>
+          <th i18n>E-Mail</th>
+          <th></th>
+        </tr>
+        @for (peer of group.peers; track peer) {
+        <tr
+          pgt-peer
+          [peer]="peer"
+          [group]="group"
+          [campaignStatus]="campaignStatus"
+        ></tr>
+        }
+      </table>
+    </mat-expansion-panel>
+  </mat-accordion>
+</section>

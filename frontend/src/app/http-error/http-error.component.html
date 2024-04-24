@@ -1,0 +1,18 @@
+<main>
+  <section>
+    <h1 i18n>Fehler bei Ihrer Anfrage</h1>
+    <div>
+      <button mat-raised-button color="primary" (click)="toLogin()">
+        <span i18n>Zum Login</span> <mat-icon>subdirectory_arrow_left</mat-icon>
+      </button>
+      <button mat-raised-button color="primary" (click)="goBack()">
+        <span i18n>Zurück</span> <mat-icon>arrow_back</mat-icon>
+      </button>
+    </div>
+  </section>
+  <section>
+    <figure>
+      <img [src]="'http://http.cat/' + status" />
+    </figure>
+  </section>
+</main>

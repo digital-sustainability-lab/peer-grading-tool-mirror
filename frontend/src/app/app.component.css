@@ -1,0 +1,113 @@
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 20px 20px 60px 20px;
+}
+
+main section {
+  border-bottom: 1px solid var(--bfh-orange);
+  padding: 20px 0;
+}
+
+main section:last-child {
+  border: none;
+}
+
+table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+table tr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+table tr ::ng-deep td,
+table tr ::ng-deep th {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--bfh-lightgrey-4);
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: unset;
+}
+
+.smallMobile {
+  display: none;
+}
+
+table tr ::ng-deep td input {
+  display: block;
+  width: calc(100% - 10px);
+  font-size: 18px;
+  padding: 5px;
+}
+
+.selfGrading {
+  background-color: var(--bfh-lightblue) !important;
+}
+
+@media screen and (max-width: 810px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  table tr:first-child {
+    display: none;
+  }
+
+  table tr {
+    display: block;
+  }
+
+  table tr ::ng-deep td,
+  table tr ::ng-deep th {
+    display: flex;
+  }
+
+  table .mobile {
+    width: 40%;
+  }
+
+  table tr ::ng-deep td div,
+  table tr ::ng-deep th div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .campaignProperties {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .smallMobile {
+    display: block;
+  }
+
+  table tr ::ng-deep td {
+    display: block;
+  }
+
+  table tr ::ng-deep td .mobile {
+    width: auto;
+  }
+}

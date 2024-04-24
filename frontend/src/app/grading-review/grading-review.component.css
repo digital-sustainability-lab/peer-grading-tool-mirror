@@ -1,0 +1,112 @@
+.peerGradingReview {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.bigNumbers {
+  display: flex;
+}
+
+.bigNumbers > div {
+  flex: 25%;
+  flex-direction: row;
+  text-align: center;
+}
+
+.bigNumbers > div div {
+  font-size: 40px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--bfh-lightgrey-3);
+  padding: 50px 20px;
+}
+
+@media screen and (max-width: 810px) {
+  .grading-table {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .grading-table tr:first-child {
+    display: block;
+  }
+
+  .grading-table tr {
+    display: block;
+    width: 33%;
+  }
+
+  .grading-table tr:nth-child(odd) {
+    background-color: unset;
+  }
+
+  .grading-table tr td,
+  .grading-table tr th {
+    display: block;
+  }
+
+  .grading-table tr td:nth-child(odd),
+  .grading-table tr th:nth-child(odd) {
+    background-color: var(--bfh-lightgrey-4);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grading-table {
+    display: block;
+    flex-direction: column;
+  }
+
+  .grading-table tr:first-child {
+    display: none;
+  }
+
+  .grading-table tr {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: calc(100% - 20px);
+  }
+
+  .grading-table tr:nth-child(2n + 1) {
+    background-color: unset;
+  }
+
+  .grading-table tr td,
+  .grading-table tr th {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .grading-table tr td:nth-child(odd),
+  .grading-table tr th:nth-child(odd) {
+    background-color: unset;
+  }
+
+  .bigNumbers {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .bigNumbers > div {
+    flex: 100%;
+  }
+
+  .bigNumbers > div {
+    flex: 25%;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .bigNumbers > div div {
+    font-size: 30px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+  }
+}

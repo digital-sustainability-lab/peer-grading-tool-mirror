@@ -1,0 +1,104 @@
+table {
+  margin-bottom: 30px;
+}
+
+table tr:last-child {
+  font-weight: bold;
+}
+
+:host section {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--bfh-orange);
+}
+
+:host:last-child section {
+  border: none;
+}
+
+table th:first-child {
+  min-height: 45px;
+  min-width: 180px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to top right,
+    #fff0 calc(50% - 1px),
+    var(--bfh-grey),
+    #fff0 calc(50% + 1px)
+  );
+}
+
+table td:first-child {
+  min-width: 180px;
+}
+
+table th:first-child span:first-child {
+  text-align: right;
+}
+
+.many-peers {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.many-peers table {
+  display: table;
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+
+.many-peers table tr {
+  display: table-row;
+}
+
+.averages {
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 810px) {
+  table {
+    display: none;
+  }
+
+  table.mobile {
+    display: flex;
+    gap: 1em;
+  }
+
+  table tr {
+    padding: 10px;
+    width: calc(100% - 20px);
+  }
+
+  table tr td:first-child,
+  table tr td:last-child {
+    font-weight: bold;
+  }
+
+  table tr:last-child {
+    font-weight: normal;
+  }
+
+  table tr td {
+    padding: 5px 0;
+  }
+
+  .selfGrading {
+    background-color: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  table tr td {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  table tr td div {
+    display: block;
+    width: auto;
+  }
+}

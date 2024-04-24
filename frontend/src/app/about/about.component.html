@@ -1,0 +1,285 @@
+<main>
+  <div class="titleAndLink">
+    <h1>Peer Grading Tool PGT</h1>
+    <button mat-raised-button color="primary" (click)="backToLogin()">
+      Back to Login <mat-icon>subdirectory_arrow_left</mat-icon>
+    </button>
+  </div>
+  <section>
+    <p>
+      <b>Note</b>: If you are interested in using PGT, the tool's
+      self-registration feature can be used. In case of questions, please
+      contact the author (see below).
+    </p>
+    <p>
+      <a
+        href="https://instructor.github.io/peer-grading/version.html"
+        target="_blank"
+        >Version Information</a
+      >
+    </p>
+  </section>
+  <section>
+    <h2>1 General</h2>
+    <p>
+      In group work, ideally all members contribute equally to the overall
+      success of the project, but usually in individually different ways. Peer
+      grading is used to evaluate individual contributions in group work
+      ([Kaufman et.al. 1999], [Brutus & Donia 2010]), in our context the online
+      tool PGT is used for this purpose. Each group member grades all other
+      group members (peer grading) as well as himself/herself (self-grading)
+      according to definable criteria and receives an evaluation in the form of
+      an anonymized comparison. The evaluations are done with a point scale
+      according to definable weighted criteria.
+    </p>
+    <p>
+      A lecturer (resp. teacher or instructor) can configure a peer grading with
+      regard to the number and designation of the criteria, their weighting and
+      the point scale, as well as the start and end date for the period of the .
+      After the peer grading , the lecturer receives a mail notification with
+      all individual and group evaluations. This allows the lecturer to compare
+      his assessment of the group contribution of individual group members with
+      the peer evaluations.
+    </p>
+    <p>
+      Both the instructor and the participants can use their respective
+      evaluations to reflect on the teaching and learning process and benefit
+      from them for further group work.
+    </p>
+  </section>
+  <section>
+    <h2>2 Other Peer Grading Tools</h2>
+    <p>
+      Comparable peer grading tools are either only commercially available with
+      a licensing model (e.g.,
+      <a href="https://info.catme.org/features/peer-evaluation/" target="_blank"
+        >CATME from Purdue University</a
+      >), or have limitations such as requiring participants to have a Google
+      account (<a
+        href="https://workspace.google.com/marketplace/app/peergrading_tool/815094938046"
+        target="_blank"
+        >peer grading tool as a plugin for Google Spreadsheets</a
+      >), which does not go along with the idea of an open software system.
+    </p>
+    <p>
+      The Moodle activity "Workshop" is similar to the desired peer grading
+      scenario. However, analysis has shown that essential aspects that are
+      realized in the PGT tool regarding functionality, level of detail,
+      flexibility and customization are not available. Thus, the PGT tool was
+      implemented in December 2022 as an in-house development at the
+      <a href="https://www.bfh.ch/wirtschaft/" target="_blank"
+        >Dep. of Business of the Bern Univ. of Applied Sciences (BUAS)</a
+      >
+      with Angular technology resulting in a web based application, funded by
+      the
+      <a href="https://virtuelleakademie.ch/foerderung/" target="_blank"
+        >BFH E-Learning Förderprogramm</a
+      >.
+    </p>
+  </section>
+  <section>
+    <h2>3 Functionality</h2>
+    <p>
+      <b>a)</b>
+      Creation of a peer grading process by the lecturer incl. import of
+      participants in shape of a (UTF-8) csv file with participant name,
+      (optional) matriculation number, email address, and group number.
+    </p>
+    <figure>
+      <img src="./assets/PG_Edit_Campaign.png" alt="Create Campaign View" />
+    </figure>
+    <p>
+      <b>b)</b> Each group member receives an email with a link to the
+      individualized peer grading sheet and fills it out completely (input
+      values are validated).
+    </p>
+    <figure>
+      <img src="./assets/PG_Grading.png" alt="Peer Grading Form" />
+    </figure>
+    <p>
+      <b>c)</b> Upon completion of the peer grading, all participants and the
+      instructor receive evaluations via email.
+    </p>
+    <figure>
+      <img src="./assets/PG_Review_Group.png" alt="Campaign Review" />
+    </figure>
+    <figure>
+      <img src="./assets/PG_Review_Peer.png" alt="Peer Grading Review" />
+    </figure>
+    <p>
+      In this example, the peer grading is based on 4 criteria with points 1..8.
+      The documentation with the meaning of the criteria and the point scales is
+      outside the PGT system and is to be made known to the participants by
+      other means (see example for criteria catalog below). The evaluations of
+      one's own contributions by other group members are anonymized to the
+      extent that only the mean value of all third-party evaluations is given
+      and thus exact conclusions about evaluating persons are not possible.
+    </p>
+    <p>
+      The group average is calculated by averaging all third-party assessments
+      within a group. For each group member, the deviation between the group
+      average and the average of the third-party assessments of the individual
+      group member can be determined from this. In the evaluation section, the
+      difference between self-assessment and third-party assessment is also
+      shown, which enables critical reflection also with regard to future
+      teamwork. The group average is calculated by averaging all third-party
+      assessments within a group.
+    </p>
+    <p>
+      <b>d)</b> The lecturer has control over the peer grading process at any
+      time:
+    </p>
+    <figure>
+      <img
+        src="./assets/PG_Campaign_Overview.png"
+        alt="Campaign overview after invitations sent"
+      />
+    </figure>
+  </section>
+  <section>
+    <h2>4 Criteria catalog</h2>
+    <p>
+      It is by decision not presented by the PGT system, since it is usually
+      available as a semi-structured document and would have to be imported or
+      entered in a time-consuming complex manner. Here is an example from the
+      course
+      <a href="https://showroom-bsc.digisus-lab.ch/" target="_blank">
+        Business Case Studies" (BCS)
+      </a>
+      in the Department of Business at the Bern University of Applied Sciences.
+      It is presented in the study guide of the course. The standard score for a
+      "good" assessment is set at 5/6 points.
+    </p>
+    <h3>Criterion "teamwork":</h3>
+    <div class="criteria">
+      <div>
+        <b>8/7:</b>
+        Exceptional contribution to the group process; "doer"; proactively
+        advances project goals; is extremely committed; "sacrifices"
+        himself/herself for project success; accomplishes much more than
+        expected; opinion leader; high communication skills.
+      </div>
+      <div>
+        <b>6/5:</b>
+        Committed member, contribution not too high, not too low; participates
+        in the group process with an average sense of responsibility; has an
+        integrating effect in conflicts.
+      </div>
+      <div>
+        <b>4/3:</b>
+        Provides contributions on demand; neutral attitude towards project
+        success; does not make motivational advances when there are "sags" in
+        the team.
+      </div>
+      <div>
+        <b>2/1:</b>
+        Unproductive to counterproductive attitude; does not contribute to the
+        success of the project or hinders/prevents its progress. Destructive
+        charisma.
+      </div>
+    </div>
+    <h3>Criterion "Quality of contributions":</h3>
+    <div class="criteria">
+      <div>
+        <b>8/7:</b>
+        Well above the expected quality.
+      </div>
+      <div>
+        <b>6/5:</b>
+        Corresponds to the expected quality.
+      </div>
+      <div>
+        <b>4/3:</b>
+        Less than the expected quality.
+      </div>
+      <div>
+        <b>2/1:</b>
+        Insufficient quality.
+      </div>
+    </div>
+    <h3>Criterion "Quantity of contributions":</h3>
+    <div class="criteria">
+      <div>
+        <b>8/7:</b>
+        Well above the expected quantity.
+      </div>
+      <div>
+        <b>6/5:</b>
+        Corresponds to the expected quantity.
+      </div>
+      <div>
+        <b>4/3:</b>
+        Less than the expected quantity.
+      </div>
+      <div>
+        <b>2/1:</b>
+        Insufficient quantity.
+      </div>
+    </div>
+    <h3>Criterion "Reliability":</h3>
+    <div class="criteria">
+      <div>
+        <b>8/7:</b>
+        Takes appointments seriously, actively seeks substitutes or alternatives
+        if unable to attend or misses appointments; offers substitutes for what
+        has been missed; ensures that the overall plan is adhered to, provides
+        corrective impetus if necessary.
+      </div>
+      <div>
+        <b>6/5:</b>
+        Mostly reliable, but adapts to possibly fluctuating team attitude;
+        little pronounced striving for workload compensation if (e.g. after
+        absence) there is a low allocation of tasks; hints at possible deficits
+        in the project are given from time to time.
+      </div>
+      <div>
+        <b>4/3:</b>
+        Multiple absences or failure to complete tasks; no or late sign-off;
+        only in rare cases are indications of possible deficits in the project
+        to be expected.
+      </div>
+      <div>
+        <b>2/1:</b>
+        Unreliable, can hardly be entrusted with tasks critical to success;
+        (almost) no communication recognizable in case of failures.
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Literature</h2>
+    <ul>
+      <li>
+        Brutus, S., & Donia, M. (2010). Improving the effectiveness of students
+        in groups with a centralized peer evaluation system. Academy of
+        Management Learning and Education, 9(4), 652–662.
+        <a
+          href="https://journals.aom.org/doi/abs/10.5465/amle.9.4.zqr652"
+          target="_blank"
+          >https://journals.aom.org/doi/abs/10.5465/amle.9.4.zqr652</a
+        >
+      </li>
+      <li>
+        Kaufman, D. B., Felder, R. M., & Fuller, H. (1999). Peer ratings in
+        cooperative learning teams. ASEE Annual Conference Proceedings,
+        3931–3942.
+        <a
+          href="https://www.researchgate.net/publication/2450650_Peer_Ratings_in_Cooperative_Learning_Teams"
+          target="_blank"
+          >https://www.researchgate.net/publication/2450650_Peer_Ratings_in_Cooperative_Learning_Teams</a
+        >
+      </li>
+    </ul>
+  </section>
+  <section>
+    <p>
+      Author:
+      <a href="https://www.bfh.ch/de/eduard-klein" target="_blank"
+        >Eduard Klein</a
+      >
+      / Apr 17, 2024
+    </p>
+    <button mat-raised-button color="primary" (click)="backToLogin()">
+      Back to Login <mat-icon>subdirectory_arrow_left</mat-icon>
+    </button>
+  </section>
+</main>

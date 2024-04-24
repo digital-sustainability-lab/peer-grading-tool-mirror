@@ -1,0 +1,14 @@
+@for (peer of peers; track peer) {
+<h4 i18n>Kommentare von {{ peer.firstName }} {{ peer.lastName }}:</h4>
+<dl>
+  @for (comment of filterCommentsByPeer(peer); track comment) {
+  <dt>
+    <b i18n>an {{ comment.toUser.firstName }} {{ comment.toUser.lastName }}</b
+    >:
+  </dt>
+  <dd>
+    {{ comment.text }}
+  </dd>
+  }
+</dl>
+}

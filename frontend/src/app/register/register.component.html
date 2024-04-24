@@ -1,0 +1,94 @@
+<main>
+  <section>
+    <div class="titleAndLink">
+      <h1 i18n>Peer Grading Tool - Registrieren</h1>
+
+      <div class="lang-about-buttons">
+        <pgt-language-switch></pgt-language-switch>
+      </div>
+    </div>
+    @if (registerForm) {
+    <form [formGroup]="registerForm">
+      <label>
+        <ng-container i18n>Vorname</ng-container>:
+        <div class="formInputComtainer">
+          <input type="text" formControlName="firstName" />
+          <pgt-form-error
+            [control]="registerForm.controls['firstName']"
+          ></pgt-form-error>
+        </div>
+      </label>
+      <label>
+        <ng-container i18n>Nachname</ng-container>:
+        <div class="formInputComtainer">
+          <input type="text" formControlName="lastName" />
+          <pgt-form-error
+            [control]="registerForm.controls['lastName']"
+          ></pgt-form-error>
+        </div>
+      </label>
+      <label>
+        <ng-container i18n>Unternehmen/Universität/andere</ng-container>:
+        <div class="formInputComtainer">
+          <input type="text" formControlName="company" />
+          <pgt-form-error
+            [control]="registerForm.controls['company']"
+          ></pgt-form-error>
+        </div>
+      </label>
+      <label>
+        <ng-container i18n>E-Mail</ng-container>:
+        <div classs="formInputComtainer">
+          <input type="email" formControlName="email" />
+          <pgt-form-error
+            [control]="registerForm.controls['email']"
+          ></pgt-form-error>
+        </div>
+      </label>
+      <label>
+        <ng-container i18n>E-Mail wiederholen</ng-container>:
+        <div classs="formInputComtainer">
+          <input type="email" formControlName="emailRepeat" />
+          <pgt-form-error
+            [control]="registerForm.controls['emailRepeat']"
+          ></pgt-form-error>
+        </div>
+      </label>
+      <label>
+        <ng-container i18n>Passwort</ng-container>:
+        <div classs="formInputComtainer">
+          <input type="password" formControlName="password" />
+          <pgt-form-error
+            [control]="registerForm.controls['password']"
+          ></pgt-form-error>
+        </div>
+      </label>
+      <label>
+        <ng-container i18n>Passwort wiederholen</ng-container>:
+        <div classs="formInputComtainer">
+          <input type="password" formControlName="passwordRepeat" />
+          <pgt-form-error
+            [control]="registerForm.controls['passwordRepeat']"
+          ></pgt-form-error>
+        </div>
+      </label>
+      <pgt-form-error [control]="registerForm"></pgt-form-error>
+      <div class="login-buttons">
+        <button
+          mat-raised-button
+          color="primary"
+          [disabled]="!registerForm.valid || sent()"
+          (click)="register(registerForm)"
+        >
+          <ng-container i18n>Registrieren</ng-container>
+          <mat-icon>send</mat-icon>
+        </button>
+        <button mat-raised-button color="primary" (click)="navigateToLogin()">
+          <ng-container i18n>Zum Login</ng-container>
+          <mat-icon>subdirectory_arrow_left</mat-icon>
+        </button>
+      </div>
+    </form>
+    }
+  </section>
+</main>

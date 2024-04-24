@@ -1,0 +1,33 @@
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+div {
+  display: flex;
+  gap: 1em;
+}
+
+img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+  }
+}

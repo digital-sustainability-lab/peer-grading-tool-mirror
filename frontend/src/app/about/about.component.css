@@ -1,0 +1,39 @@
+.titleAndLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 5px auto;
+  width: 80%;
+}
+
+figure img {
+  width: 100%;
+  border: 0.5px solid var(--bfh-lightgrey-2);
+}
+
+.criteria div {
+  display: flex;
+  gap: 1em;
+}
+
+@media screen and (max-width: 810px) {
+  figure {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .titleAndLink {
+    flex-direction: column;
+    gap: 1em;
+  }
+}

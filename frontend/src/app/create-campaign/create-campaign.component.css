@@ -1,0 +1,183 @@
+section > div,
+section form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+section label {
+  flex: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+section label input,
+section label select {
+  background-color: var(--bfh-lightgrey-4);
+  border: none;
+  padding: 7px;
+  font-size: 18px;
+  display: block;
+}
+
+section label input {
+  width: calc(100% - 14px);
+}
+
+section label.file-input {
+  display: flex !important;
+  gap: 0;
+}
+
+/* styling for the input type="file" */
+/* section label.file-input.disabled:hover {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+} */
+
+section label > div {
+  width: 30%;
+}
+
+.formInputcontainer {
+  display: flex;
+  flex-direction: column;
+  flex: 60%;
+  gap: 0;
+}
+
+.groupOverview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.groupOverview div {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.groupOverview div label {
+  cursor: pointer;
+  display: block;
+  flex: none;
+  padding: 7px 0;
+  border: none;
+}
+
+.groupOverview label input {
+  display: none;
+}
+
+section label input:focus {
+  outline: 1px solid var(--bfh-grey);
+}
+
+section label input.ng-invalid.ng-touched {
+  outline: 1px solid var(--bfh-darkred);
+}
+
+section label button {
+  margin-left: auto;
+}
+
+table {
+  margin: 15px 0;
+}
+
+table button {
+  float: right;
+}
+
+section:last-child button {
+  float: right;
+  margin-right: 5px;
+}
+
+.groupOverview .errors {
+  color: var(--bfh-darkred);
+  display: block;
+  width: 100%;
+}
+
+.groupOverview .errors p {
+  margin: 0;
+}
+
+button a {
+  text-decoration: none;
+  color: unset;
+  height: 100%;
+  width: 100%;
+}
+
+::ng-deep simple-snack-bar button:hover {
+  table .mobile {
+    width: 40%;
+  }
+
+  background-color: var(--bfh-darkgrey);
+}
+
+span {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.submitSection {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  align-items: center;
+}
+
+@media screen and (max-width: 810px) {
+  section label {
+    gap: 0.5em;
+  }
+
+  section label > div {
+    width: 100%;
+  }
+
+  .formInputcontainer {
+    flex: 100%;
+  }
+
+  .groupOverview div {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  table tr:first-child {
+    display: flex;
+  }
+
+  table tr {
+    display: flex;
+  }
+
+  table tr td,
+  table tr th {
+    display: table-cell;
+  }
+
+  table .mobile {
+    width: unset;
+  }
+
+  table tr td div,
+  table tr th div {
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}

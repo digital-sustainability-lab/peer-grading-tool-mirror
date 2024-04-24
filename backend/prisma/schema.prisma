@@ -1,0 +1,118 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Peer {
+  peerId              Int                   @id @default(autoincrement())
+  lastName            String
+  firstName           String
+  matriculationNumber String?
+  email               String                @unique
+  user                User                  @relation(fields: [userId], references: [userId], onDelete: Cascade)
+  userId              Int                   @unique
+  groups              GroupPeerConnection[]
+  comments            Comment[]
+  gradingsFrom        Grading[]             @relation("fromPeer")
+  gradingsTo          Grading[]             @relation("toPeer")
+}
+
+model Comment {
+  group   Group  @relation(fields: [groupId], references: [groupId], onDelete: Cascade, onUpdate: Cascade)
+  groupId Int
+  fromPeer    Peer   @relation(fields: [fromPeerId], references: [peerId], onDelete: Cascade, onUpdate: Cascade)
+  fromPeerId  Int
+  toUser      User  @relation(fields: [toUserId], references: [userId], onDelete: Cascade, onUpdate: Cascade)
+  toUserId Int
+  text    String
+
+  @@id([groupId, fromPeerId, toUserId])
+}
+
+model Group {
+  groupId    Int                   @id @default(autoincrement())
+  number     Int
+  completed  Boolean               @default(false)
+  comments   Comment[]
+  peers      GroupPeerConnection[]
+  campaign   Campaign              @relation(fields: [campaignId], references: [campaignId], onDelete: Cascade, onUpdate: Cascade)
+  campaignId Int
+  gradings   Grading[]
+
+  @@map("_Group")
+}
+
+model Criteria {
+  criteriaId Int       @id @default(autoincrement())
+  name       String
+  weight     Float
+  campaign   Campaign  @relation(fields: [campaignId], references: [campaignId])
+  campaignId Int
+  gradings   Grading[]
+}
+
+model Campaign {
+  campaignId    Int        @id @default(autoincrement())
+  name          String
+  maxPoints     Int
+  creationDate  DateTime @default(now())
+  openingDate   DateTime?   
+  closingDate   DateTime?
+  language      String @default("de")
+  users         User[] 
+  groups        Group[]
+  criteria      Criteria[]
+}
+
+model Grading {
+  fromPeer   Peer     @relation(name: "fromPeer", fields: [fromPeerId], references: [peerId], onDelete: Cascade, onUpdate: Cascade)
+  fromPeerId Int
+  toPeer     Peer     @relation(name: "toPeer", fields: [toPeerId], references: [peerId], onDelete: Cascade, onUpdate: Cascade)
+  toPeerId   Int
+  group      Group    @relation(fields: [groupId], references: [groupId], onDelete: Cascade, onUpdate: Cascade)
+  groupId    Int
+  criteria   Criteria @relation(fields: [criteriaId], references: [criteriaId], onDelete: Cascade, onUpdate: Cascade)
+  criteriaId Int
+  points     Int
+
+  
+  @@unique(fields: [fromPeerId, toPeerId, groupId, criteriaId], name: "GradingId")
+}
+
+model User {
+  userId    Int        @id @default(autoincrement())
+  lastName  String
+  firstName String
+  email     String     @unique
+  password  String
+  company   String?
+  campaigns Campaign[]
+  roles     Role[]
+  comments  Comment[]
+  peer      Peer?
+  refreshToken String?
+  registerToken String? @unique
+}
+
+model Role {
+  roleId Int    @id @default(autoincrement())
+  role   String
+  users  User[]
+}
+
+model GroupPeerConnection {
+  group   Group  @relation(fields: [groupId], references: [groupId], onDelete: Cascade, onUpdate: Cascade)
+  groupId Int
+  peer    Peer   @relation(fields: [peerId], references: [peerId], onDelete: Cascade, onUpdate: Cascade)
+  peerId  Int
+  link    String @unique
+
+  @@id([groupId, peerId])
+}

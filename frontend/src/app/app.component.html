@@ -1,0 +1,7 @@
+@if ( router.url !== '/' && router.url !== '/about' &&
+!router.url.includes('/login') && !router.url.includes('/register') &&
+!router.url.includes('/peer-grading') && !router.url.includes('/error') &&
+!router.url.includes('/pdf') ) {
+<pgt-header></pgt-header>
+}
+<router-outlet></router-outlet>

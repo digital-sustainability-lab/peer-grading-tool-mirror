@@ -1,0 +1,50 @@
+<div class="meta-container">
+  <div>
+    <p>
+      <b><span i18n>Kampagnenname</span>:&nbsp;</b>
+      <span>{{ campaign.name }}</span>
+    </p>
+    <p>
+      <b><span i18n>Gruppennummer</span>:&nbsp;</b>
+      <span>{{ group.number }}</span>
+    </p>
+    <p>
+      <b><span i18n>Gruppengrösse</span>:&nbsp;</b>
+      <span>{{ group.peers.length }}</span>
+    </p>
+    <p>
+      <b><span i18n>Bewertungsskala</span>:&nbsp;</b>
+      <span>1 - {{ campaign.maxPoints }}</span>
+    </p>
+    @if (getCampaignStatus() == 'läuft') {
+    <p>
+      <b><span i18n>Kampagnenbeginn</span>:&nbsp;</b>
+      <span>{{ campaign.openingDate | date }}</span>
+    </p>
+    } @if (getCampaignStatus() == 'abgeschlossen') {
+    <p>
+      <b><span i18n>Kampagnenzeitraum</span>:&nbsp;</b>
+      <span
+        >{{ campaign.openingDate | date }} -
+        {{ campaign.closingDate | date }}</span
+      >
+    </p>
+    }
+  </div>
+  @if (showCriteria) {
+  <div>
+    @for (crit of campaign.criteria; track crit; let index = $index) {
+    <p>
+      <b
+        >@if (index == 0) {
+        <div>
+          <span i18n>Kriterien</span> (<span i18n>Gewichtung</span>):&nbsp;
+        </div>
+        }</b
+      >
+      <span> {{ crit.name }} ({{ crit.weight }})</span>
+    </p>
+    }
+  </div>
+  }
+</div>

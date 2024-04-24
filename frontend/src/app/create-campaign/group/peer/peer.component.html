@@ -1,0 +1,69 @@
+<td>
+  <div class="mobile">Vorname:</div>
+  <div>
+    <form [formGroup]="peerEditForm">
+      <label>
+        <input formControlName="firstName" placeholder="Vorname" />
+        <pgt-form-error
+          [control]="peerEditForm.controls['firstName']"
+        ></pgt-form-error>
+      </label>
+    </form>
+  </div>
+</td>
+<td>
+  <div class="mobile">Nachname:</div>
+  <div>
+    <form [formGroup]="peerEditForm">
+      <label>
+        <input formControlName="lastName" placeholder="Nachname" />
+        <pgt-form-error
+          [control]="peerEditForm.controls['lastName']"
+        ></pgt-form-error>
+      </label>
+    </form>
+  </div>
+</td>
+<td>
+  <div class="mobile">Matrikelnummer:</div>
+  <div>
+    <form [formGroup]="peerEditForm">
+      <label>
+        <input
+          formControlName="matriculationNumber"
+          placeholder="Matrikelnummer"
+        />
+        <pgt-form-error
+          [control]="peerEditForm.controls['matriculationNumber']"
+        ></pgt-form-error>
+      </label>
+    </form>
+  </div>
+</td>
+<td>
+  <div class="mobile">E-Mail:</div>
+  <div>
+    <form [formGroup]="peerEditForm">
+      <label>
+        <input formControlName="email" type="email" placeholder="E-Mail" />
+        <pgt-form-error
+          [control]="peerEditForm.controls['email']"
+        ></pgt-form-error>
+      </label>
+    </form>
+  </div>
+</td>
+<td>
+  <div class="mobile">&nbsp;</div>
+  <div class="buttons">
+    <button
+      mat-raised-button
+      color="primary"
+      [disabled]="campaignStatus == 'abgeschlossen'"
+      (click)="removePeer()"
+    >
+      Löschen
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</td>

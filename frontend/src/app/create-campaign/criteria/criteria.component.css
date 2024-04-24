@@ -1,0 +1,101 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+label {
+  flex: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+label input {
+  background-color: var(--bfh-lightgrey-4);
+  border: none;
+  padding: 7px;
+  font-size: 18px;
+  display: block;
+  width: calc(100% - 14px);
+}
+
+label > div {
+  width: 30%;
+}
+
+.formInputcontainer {
+  display: flex;
+  flex-direction: column;
+  flex: 60%;
+  gap: 0;
+}
+
+label input:focus {
+  outline: 1px solid var(--bfh-grey);
+}
+
+label input.ng-invalid.ng-touched {
+  outline: 1px solid var(--bfh-darkred);
+}
+
+label button {
+  margin-left: auto;
+}
+
+table {
+  margin: 15px 0;
+}
+
+table button {
+  float: right;
+}
+
+span {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 810px) {
+  label {
+    gap: 0.5em;
+  }
+
+  label > div {
+    width: 100%;
+  }
+
+  .formInputcontainer {
+    display: block;
+    flex: 100%;
+  }
+
+  table tr:first-child {
+    display: flex;
+  }
+
+  table tr {
+    display: flex;
+  }
+
+  table tr td,
+  table tr th {
+    display: table-cell;
+  }
+
+  table .mobile {
+    width: unset;
+  }
+
+  table tr td div,
+  table tr th div {
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}

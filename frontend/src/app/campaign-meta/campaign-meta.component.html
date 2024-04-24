@@ -1,0 +1,73 @@
+<div class="campaign-data">
+  <div>
+    @if (showName) {
+    <p>
+      <b><ng-container i18n>Kampagnenname</ng-container>:&nbsp;</b>
+      <span>{{ campaign.name }}</span>
+    </p>
+    }
+    <p>
+      <b><ng-container i18n>Status</ng-container>:&nbsp;</b>
+      <span>{{ getCampaignStatus() | campaignStatus }}</span>
+    </p>
+    <p>
+      <b><ng-container i18n>Erstellt am</ng-container>:&nbsp;</b>
+      <span>{{ campaign.creationDate | date }}</span>
+    </p>
+    @if (campaign.openingDate) {
+    <p>
+      <b><ng-container i18n>Beginn</ng-container>:&nbsp;</b>
+      <span>{{ campaign.openingDate | date }}</span>
+    </p>
+    } @if (campaign.closingDate) {
+    <p>
+      <b><ng-container i18n>Ende</ng-container>:&nbsp;</b>
+      <span>{{ campaign.closingDate | date }}</span>
+    </p>
+    }
+    <p>
+      <b><ng-container i18n>Sprache</ng-container>:&nbsp;</b>
+      <span>{{ campaign.language | uppercase }}</span>
+    </p>
+  </div>
+  <div>
+    <p>
+      <b><ng-container i18n>Bewertungsskala</ng-container>:&nbsp;</b>
+      <span>1 - {{ campaign.maxPoints }}</span>
+    </p>
+    <p>
+      <b><ng-container i18n>Anzahl Gruppen</ng-container>:&nbsp;</b>
+      <span>{{ campaign.groups.length }}</span>
+    </p>
+    <p>
+      <b><ng-container i18n>Anzahl Teilnehmende</ng-container>:&nbsp;</b>
+      <span>{{ countPeers() }}</span>
+    </p>
+    @if (getCampaignStatus() != 'erstellt') {
+    <p>
+      <b><ng-container i18n>Abschlussgrad</ng-container>:&nbsp;</b
+      ><span
+        >{{ countCompletedPeers() }}/{{ countPeers() }} ({{
+          getCompletionPercentage()
+        }}%)</span
+      >
+    </p>
+    }
+  </div>
+  <div class="criteria-data">
+    @for (crit of campaign.criteria; track crit; let index = $index) {
+    <p>
+      <b
+        >@if (index == 0) {
+        <div>
+          <ng-container i18n>Kriterien</ng-container> (<ng-container i18n
+            >Gewichtung</ng-container
+          >):&nbsp;
+        </div>
+        }</b
+      >
+      <span> {{ crit.name }} ({{ crit.weight }})</span>
+    </p>
+    }
+  </div>
+</div>

@@ -1,0 +1,135 @@
+@if (group && campaign) {
+<section>
+  <h3 i18n>Übersicht über Gruppe {{ group.number }}</h3>
+  <div class="table-container" [class.many-peers]="group.peers.length > 7">
+    <table>
+      <tr>
+        <th><span i18n>Grading an</span><span i18n>Grading von</span></th>
+        @for (peer of group.peers; track peer) {
+        <th [matTooltip]="getPeerTooltipText(peer)" matTooltipPosition="above">
+          {{ peer.lastName }} {{ peer.firstName }}
+        </th>
+        }
+      </tr>
+      @for (fromPeer of group.peers; track fromPeer) {
+      <tr>
+        <td>
+          <div>{{ fromPeer.lastName }} {{ fromPeer.firstName }}</div>
+          <div class="mobile">
+            <ng-container i18n>Erhaltener Fremddurchschnitt</ng-container>:
+            {{ campaignService.getPeersThirdPartyAverage(group, fromPeer) }}
+          </div>
+        </td>
+        @for (toPeer of group.peers; track toPeer) {
+        <td [class.selfGrading]="fromPeer == toPeer">
+          <div class="mobile">
+            <ng-container i18n
+              >Grading an {{ toPeer.lastName }}
+              {{ toPeer.firstName }}</ng-container
+            >
+          </div>
+          <div>
+            {{ campaignService.getPeerToPeerAverage(group, fromPeer, toPeer) }}
+          </div>
+        </td>
+        }
+      </tr>
+      }
+      <tr>
+        <td>
+          <span class="desktop" i18n>Fremddurchschnitt</span>
+          <span class="mobile" i18n>Fremddurchschnitte</span>:
+          <pgt-tool-tip
+            [text]="
+              'Durchschnitt aller Fremdeinschätzungen zum Teammitglied in der jeweiligen Spalte. (Durchschnitt der Werte ohne die Selbsteinschätzung in den blauen Zellen.)'
+            "
+          ></pgt-tool-tip>
+        </td>
+        @for (peer of group.peers; track peer) {
+        <td>
+          <div class="mobile">{{ peer.lastName }} {{ peer.firstName }}</div>
+          {{ campaignService.getPeersThirdPartyAverage(group, peer) }}
+        </td>
+        }
+      </tr>
+    </table>
+  </div>
+
+  <table class="mobile">
+    <tr></tr>
+    @for (peer of group.peers; track peer) {
+    <tr>
+      <td>
+        <div>
+          {{ peer.lastName }} {{ peer.firstName }}&nbsp;<pgt-tool-tip
+            [text]="getPeerTooltipText(peer)"
+            icon="info_outline"
+            color="var(--bfh-darkgrey)"
+          ></pgt-tool-tip>
+        </div>
+      </td>
+      <td>
+        <div><b i18n>Grading von</b></div>
+        <div><b i18n>Punkte</b></div>
+      </td>
+      @for (fromPeer of group.peers; track fromPeer) {
+      <td>
+        <div>{{ fromPeer.lastName }} {{ fromPeer.firstName }}</div>
+        <div>
+          {{ campaignService.getPeerToPeerAverage(group, fromPeer, peer) }}
+        </div>
+      </td>
+      }
+      <td>
+        <div><ng-container i18n>Fremddurchschnitt</ng-container>:</div>
+        <div>
+          {{ campaignService.getPeersThirdPartyAverage(group, peer) }}
+        </div>
+      </td>
+    </tr>
+    }
+  </table>
+
+  <!-- comments expansion panel -->
+  @if (group.comments.length > 0) {
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title i18n>Kommentare</mat-panel-title>
+    </mat-expansion-panel-header>
+    <pgt-group-comments
+      [comments]="group.comments"
+      [peers]="group.peers"
+    ></pgt-group-comments>
+  </mat-expansion-panel>
+  } @else {
+  <ng-container i18n>Keine Kommentare erfasst.</ng-container>
+  }
+
+  <div class="averages">
+    <b
+      ><ng-container i18n>Gruppendurchschnitt</ng-container>:
+      {{ campaignService.getGroupAverage(group) }}
+      <pgt-tool-tip
+        text="Mittelwert der Fremddurchschnitte."
+        i18n-text
+      ></pgt-tool-tip>
+    </b>
+  </div>
+
+  @if (getPeersWithIncompleteGradings().length > 0) {
+  <p>
+    @for (peer of getPeersWithIncompleteGradings(); track peer; let i = $index)
+    {
+    <span>
+      @if (i == 0) {
+      <b><ng-container i18n>Peers mit ausstehenden Gradings</ng-container>:</b>
+
+      }
+      {{ peer.firstName }} {{ peer.lastName }}@if (i + 1 <
+      getPeersWithIncompleteGradings().length) { , }
+    </span>
+    }
+  </p>
+  }
+</section>
+}
