@@ -1,0 +1,10 @@
+{
+  "name": "pgt",
+  "version": "0.0.1",
+  "description": "use this to push changes on the branch open-source-mirror",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "merge-squash": "git pull && git checkout open-source-mirror && git merge --squash main && git commit -m \"merge squash main\" && git push && git checkout main"
+  }
+}
