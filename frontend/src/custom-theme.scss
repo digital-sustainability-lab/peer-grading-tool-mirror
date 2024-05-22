@@ -98,6 +98,31 @@ $bfh-orange-palette: (
   ),
 );
 
+$bfh-red-palette: (
+  50: #faebed,
+  100: #f3cccf,
+  200: #dc9a97,
+  300: #cc7571,
+  400: #d25b50,
+  500: #d44f39,
+  600: #c54738,
+  700: #b43e32,
+  800: #a7392c,
+  900: #992f21,
+  contrast: (
+    50: var(--bfh-text-color),
+    100: var(--bfh-text-color),
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
 $dsl-headline-1: mat.define-typography-level(
   $font-weight: normal,
   $font-size: 2em,
@@ -173,7 +198,7 @@ $dsl-ci-cd-primary: mat.define-palette($bfh-grey-palette, 500);
 $dsl-ci-cd-accent: mat.define-palette($bfh-orange-palette, 400);
 
 // optional
-$dsl-ci-cd-warn: mat.define-palette($bfh-grey-palette, 900);
+$dsl-ci-cd-warn: mat.define-palette($bfh-red-palette, 400);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
