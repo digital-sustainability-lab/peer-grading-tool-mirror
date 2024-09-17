@@ -148,8 +148,8 @@
         </div>
         @if (createCampaignService.csvErrors().length > 0) {
         <div class="errors">
-          <ng-container i18n>Fehler beim Importieren</ng-container>: @for (error
-          of createCampaignService.csvErrors(); track error) {
+          <ng-container i18n>Fehler / Warnungen beim Importieren</ng-container>:
+          @for (error of createCampaignService.csvErrors(); track error) {
           <p>
             {{ error }}
           </p>

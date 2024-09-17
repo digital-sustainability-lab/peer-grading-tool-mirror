@@ -5,8 +5,10 @@ The Peer Grading Tool (PGT) is used for mutual and individual evaluation of grou
 ## Initial setup
 
 1. First, the .env file must be set up for the backend. For this purpose, `.env.example` can be used as a template. (make sure to properly secure your environment variables when working in a productive environment)
+
    - DATABASE_URL, JWT-SECRET, JWT_REFRESH_SECRET and HOST can be left for local use.
    - SEND_GRID_KEY and SEND_GRID_SENDER_EMAIL must be obtained from sendgrid. see `https://sendgrid.com/`
+
 2. Use `npm i` in the `frontend/` and `backend/` folder.
 
    - Then check whether the Prisma version in `/backend/package.json` and `/backend/package-lock.json` is at least 4.7.1.
@@ -33,3 +35,9 @@ If a change has been made to the database model, i.e. to the file `/backend/pris
 PGT uses Docker Compose to deploy. You can deploy it locally by using `docker compose up` in the root directory.
 You can have a look at the deployed app by going to `http://localhost:5000`.
 This is useful for testing the localized build, because the angular server only allows for one language at a time.
+
+## Open Sourcing
+
+PGT is being open sourced. This is done through repository mirroring (push method) from Gitlab to GitHub. Only one branch is being tracked. It's called `open-source-mirror`. Make sure to not let your commits contain any sensitive data.
+
+You can use the `package.json` file in the **root directory** to update the mirroring branch with `npm run merge-squash`.
