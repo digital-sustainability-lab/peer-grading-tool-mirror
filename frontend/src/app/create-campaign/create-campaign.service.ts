@@ -99,12 +99,12 @@ export class CreateCampaignService {
       '',
       8,
       'de',
+      true,
       undefined,
       undefined,
       undefined,
       [],
-      JSON.parse(JSON.stringify(this.defaultCriteria.de)),
-      0
+      JSON.parse(JSON.stringify(this.defaultCriteria.de))
     );
 
     return campaign;

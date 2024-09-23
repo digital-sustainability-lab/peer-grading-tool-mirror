@@ -503,6 +503,26 @@ export class SendgridService {
         })}<br />`;
       }
 
+      if (checkData.allowCommentsForPeersChanged != undefined) {
+        if (campaign.allowCommentsForPeers) {
+          html += `${this.i18n.t('mail.campaignChangedAllowCommentsEnabled', {
+            lang: lang,
+            args: {
+              oldAllowCommentsForPeers: checkData.allowCommentsForPeersChanged,
+              allowCommentsForPeers: campaign.allowCommentsForPeers,
+            },
+          })}<br />`;
+        } else {
+          html += `${this.i18n.t('mail.campaignChangedAllowCommentsDisabled', {
+            lang: lang,
+            args: {
+              oldAllowCommentsForPeers: checkData.allowCommentsForPeersChanged,
+              allowCommentsForPeers: campaign.allowCommentsForPeers,
+            },
+          })}<br />`;
+        }
+      }
+
       if (checkData.addedGroups.length > 0) {
         html += `${this.i18n.t('mail.campaignChangedGroupsAdded', {
           lang: lang,

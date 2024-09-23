@@ -54,5 +54,6 @@ export const input_campaign: Campaign = {
   language: 'de',
   creationDate: new Date(),
   criteria: [input_criteria1, input_criteria2],
+  allowCommentsForPeers: true,
   groups: [input_group],
 };

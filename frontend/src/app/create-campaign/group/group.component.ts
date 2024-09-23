@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Group, Campaign, Peer, CampaignStatus } from 'src/app/interfaces';
-import { CampaignService } from 'src/app/services/campaign.service';
+import { FormGroup } from '@angular/forms';
+import { Group, Campaign, CampaignStatus } from 'src/app/interfaces';
 import { CreateCampaignService } from '../create-campaign.service';
 
 @Component({

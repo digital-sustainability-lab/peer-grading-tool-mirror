@@ -2,6 +2,8 @@ export interface Campaign {
   campaignId: number;
   name: string;
   maxPoints: number;
+  language: string;
+  allowCommentsForPeers: boolean;
   creationDate: Date;
   openingDate?: Date;
   closingDate?: Date;

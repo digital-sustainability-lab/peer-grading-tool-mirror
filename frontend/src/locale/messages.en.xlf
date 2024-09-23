@@ -608,7 +608,7 @@
       </trans-unit>
       <trans-unit id="5455118973392620099" datatype="html">
         <source>Erhaltene Kommentare</source>
-        <target state="translated">comments recieved</target>
+        <target state="translated">comments received</target>
       </trans-unit>
       <trans-unit id="5347306123818121441" datatype="html">
         <source>Autor*in</source>
@@ -620,7 +620,7 @@
       </trans-unit>
       <trans-unit id="225136691800947110" datatype="html">
         <source>Keine Kommentare erhalten.</source>
-        <target state="translated">no comments recieved.</target>
+        <target state="translated">no comments received.</target>
       </trans-unit>
       <trans-unit id="598464111170380863" datatype="html">
         <source>Übersicht exportieren</source>
@@ -666,9 +666,9 @@
         <source>Die Gradings und der Kommentar können nach dem Senden nicht mehr bearbeitet werden.</source>
         <target state="translated">the gradings and the comment cannot be edited after sending.</target>
       </trans-unit>
-      <trans-unit id="2745229489052876275" datatype="html">
-        <source> Kommentar an Dozent/Dozentin <x id="INTERPOLATION" equiv-text="{{ toUser.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ toUser.lastName }}"/> </source>
-        <target state="translated"> comment for lecturer <x id="INTERPOLATION" equiv-text="{{ toUser.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ toUser.lastName }}"/></target>
+      <trans-unit id="1777246261358354763" datatype="html">
+        <source>Kommentar an Dozent/Dozentin <x id="INTERPOLATION" equiv-text="{{ toUser.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ toUser.lastName }}"/></source>
+        <target state="translated">comment for lecturer <x id="INTERPOLATION" equiv-text="{{ toUser.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ toUser.lastName }}"/></target>
       </trans-unit>
       <trans-unit id="180148206852383866" datatype="html">
         <source>Kommentar an <x id="INTERPOLATION" equiv-text="{{ toUser.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ toUser.lastName }}"/></source>
@@ -825,6 +825,42 @@
       <trans-unit id="7197165462577994615" datatype="html">
         <source>Hinweis: Die Gruppen wurden beginnend mit Nr. 1 fortlaufend neu nummeriert.</source>
         <target state="new">note: the groups were renumbered consecutively starting with no. 1.</target>
+      </trans-unit>
+      <trans-unit id="2285020234888244971" datatype="html">
+        <source>Der eingegebene Kommentar ist nur für Dozierende sichtbar.</source>
+        <target state="new">the entered comment is visible for lecturers only.</target>
+      </trans-unit>
+      <trans-unit id="1731589593378340862" datatype="html">
+        <source>Der eingegebene Kommentar ist sowohl für Dozierende, als auch für <x id="PH" equiv-text="this.toUser.firstName"/> <x id="PH_1" equiv-text="this.toUser.lastName"/> sichtbar.</source>
+        <target state="new">the entered comment is visible both for lecturers and for <x id="PH" equiv-text="this.toUser.firstName"/> <x id="PH_1" equiv-text="this.toUser.lastName"/>.</target>
+      </trans-unit>
+      <trans-unit id="7375687917005266394" datatype="html">
+        <source>P2P Kommentare erlaubt</source>
+        <target state="new">P2P comments enabled</target>
+      </trans-unit>
+      <trans-unit id="2283676118253225143" datatype="html">
+        <source>P2P Kommentare nicht erlaubt</source>
+        <target state="new">P2P comments disabled</target>
+      </trans-unit>
+      <trans-unit id="1853713114962066756" datatype="html">
+        <source>P2P Kommentare erlauben</source>
+        <target state="new">enable P2P comments</target>
+      </trans-unit>
+      <trans-unit id="8796201162496201290" datatype="html">
+        <source>P2P = Peer to Peer; Legt fest, ob Teilnehmende einer Gruppe untereinander Kommentare zusenden können. Kommentare an Dozierende sind immer aktiviert.</source>
+        <target state="new">P2P = peer to peer; determines whether participants in a group can send comments to each other. comments to lecturers are always enabled.</target>
+      </trans-unit>
+      <trans-unit id="8556919461008563084" datatype="html">
+        <source>Bitte die oberste Zeile der Vorlage für den Import nicht verändern.</source>
+        <target state="new">Please do not change the top line of the template for the import.</target>
+      </trans-unit>
+      <trans-unit id="8807722618432376624" datatype="html">
+        <source>Ja</source>
+        <target state="new">yes</target>
+      </trans-unit>
+      <trans-unit id="5982204146953564471" datatype="html">
+        <source>Nein</source>
+        <target state="new">no</target>
       </trans-unit>
     </body>
   </file>

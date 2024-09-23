@@ -25,13 +25,13 @@ model Peer {
 }
 
 model Comment {
-  group   Group  @relation(fields: [groupId], references: [groupId], onDelete: Cascade, onUpdate: Cascade)
-  groupId Int
-  fromPeer    Peer   @relation(fields: [fromPeerId], references: [peerId], onDelete: Cascade, onUpdate: Cascade)
-  fromPeerId  Int
-  toUser      User  @relation(fields: [toUserId], references: [userId], onDelete: Cascade, onUpdate: Cascade)
-  toUserId Int
-  text    String
+  group      Group  @relation(fields: [groupId], references: [groupId], onDelete: Cascade, onUpdate: Cascade)
+  groupId    Int
+  fromPeer   Peer   @relation(fields: [fromPeerId], references: [peerId], onDelete: Cascade, onUpdate: Cascade)
+  fromPeerId Int
+  toUser     User   @relation(fields: [toUserId], references: [userId], onDelete: Cascade, onUpdate: Cascade)
+  toUserId   Int
+  text       String
 
   @@id([groupId, fromPeerId, toUserId])
 }
@@ -59,16 +59,17 @@ model Criteria {
 }
 
 model Campaign {
-  campaignId    Int        @id @default(autoincrement())
-  name          String
-  maxPoints     Int
-  creationDate  DateTime @default(now())
-  openingDate   DateTime?   
-  closingDate   DateTime?
-  language      String @default("de")
-  users         User[] 
-  groups        Group[]
-  criteria      Criteria[]
+  campaignId            Int        @id @default(autoincrement())
+  name                  String
+  maxPoints             Int
+  creationDate          DateTime   @default(now())
+  openingDate           DateTime?
+  closingDate           DateTime?
+  language              String     @default("de")
+  users                 User[]
+  groups                Group[]
+  criteria              Criteria[]
+  allowCommentsForPeers Boolean    @default(true)
 }
 
 model Grading {
@@ -82,23 +83,22 @@ model Grading {
   criteriaId Int
   points     Int
 
-  
   @@unique(fields: [fromPeerId, toPeerId, groupId, criteriaId], name: "GradingId")
 }
 
 model User {
-  userId    Int        @id @default(autoincrement())
-  lastName  String
-  firstName String
-  email     String     @unique
-  password  String
-  company   String?
-  campaigns Campaign[]
-  roles     Role[]
-  comments  Comment[]
-  peer      Peer?
-  refreshToken String?
-  registerToken String? @unique
+  userId        Int        @id @default(autoincrement())
+  lastName      String
+  firstName     String
+  email         String     @unique
+  password      String
+  company       String?
+  campaigns     Campaign[]
+  roles         Role[]
+  comments      Comment[]
+  peer          Peer?
+  refreshToken  String?
+  registerToken String?    @unique
 }
 
 model Role {

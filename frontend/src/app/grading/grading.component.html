@@ -43,13 +43,14 @@
           [isAdmin]="true"
           [toUser]="user"
         ></pgt-single-comment>
-        } @for (user of peerUsers(); track user) {
+        } @if (campaign().allowCommentsForPeers) { @for (user of peerUsers();
+        track user) {
         <pgt-single-comment
           [commentFormGroup]="gradingForm.controls['comments']"
           [peer]="peer()"
           [toUser]="user"
         ></pgt-single-comment>
-        }
+        } }
       </div>
 
       <div>

@@ -90,6 +90,8 @@
 
     <!-- comments -->
 
+    @if(campaign().allowCommentsForPeers) {
+
     <div class="comments">
       <h3 i18n>Erhaltene Kommentare</h3>
       @if (gradingReviewData().comments.length > 0) {
@@ -111,6 +113,7 @@
       <p i18n>Keine Kommentare erhalten.</p>
       }
     </div>
+    }
 
     <div class="campaignProperties">
       <button mat-raised-button color="primary" (click)="exportPDF()">

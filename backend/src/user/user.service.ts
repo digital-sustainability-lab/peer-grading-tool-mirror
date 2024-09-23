@@ -243,6 +243,7 @@ export class UserService {
                   closingDate: true,
                   language: true,
                   maxPoints: true,
+                  allowCommentsForPeers: true,
                   groups: {
                     select: {
                       peers: true,

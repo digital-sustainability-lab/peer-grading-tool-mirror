@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Campaign, Peer, PeerComment } from 'src/app/interfaces';
+import { Peer, PeerComment } from 'src/app/interfaces';
 
 @Component({
   selector: 'pgt-group-comments',

@@ -38,6 +38,8 @@
   "campaignNoReminderText": "Bei der Kampagne \"{campaignName}\" wurden bereits alle Gradings gesendet. Es wurden keine Teilnehmer erinnert.",
   "campaignChangedText": "Ihre laufende Kampagne \"{campaignName}\" wurde geändert.",
   "campaignChangedRename": "Umbenennung von \"{oldCampaignName}\" in \"{campaignName}\".",
+  "campaignChangedAllowCommentsEnabled": "Kommentare an Peers wurden aktiviert.",
+  "campaignChangedAllowCommentsDisabled": "Kommentare an Peers wurden deaktiviert.",
   "campaignChangedGroupsAdded": "Anzahl hinzugefügter Gruppen: {numberOfGroups}",
   "campaignChangedGroupsRemoved": "Anzahl entfernter Gruppen: {numberOfGroups}",
   "campaignChangedGroupsChanged": "Anzahl geänderter Gruppen: {numberOfGroups}",

@@ -10,6 +10,8 @@
   "status": "Status",
   "maxPoints": "Maximale Punktzahl",
   "numberOfGroups": "Anzahl Gruppen",
+  "language": "Sprache",
+  "P2PCommentsAllowed": "P2P Kommentare erlaubt?",
   "exportDate": "Exportdatum",
   "createdOn": "Erstellt am",
   "start": "Kampagnenbeginn",

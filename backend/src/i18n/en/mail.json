@@ -38,6 +38,8 @@
   "campaignNoReminderText": "for the campaign \"{campaignName}\" all gradings have already been sent, no participants were reminded.",
   "campaignChangedText": "your running campaign \"{campaignName}\" was changed.",
   "campaignChangedRename": "renaming of \"{oldCampaignName}\" into \"{campaignName}\".",
+  "campaignChangedAllowCommentsEnabled": "comments for peers have been enabled.",
+  "campaignChangedAllowCommentsDisabled": "comments for peers have been disabled.",
   "campaignChangedGroupsAdded": "number of groups added: {numberOfGroups}",
   "campaignChangedGroupsRemoved": "number of groups deleted: {numberOfGroups}",
   "campaignChangedGroupsChanged": "number of groups changed: {numberOfGroups}",

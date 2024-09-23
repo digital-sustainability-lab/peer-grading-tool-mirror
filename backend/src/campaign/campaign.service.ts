@@ -24,6 +24,7 @@ export interface UpdateCampaignCheckData {
   removedGroups: any[];
   changedGroups: any[];
   oldCampaignName?: string;
+  allowCommentsForPeersChanged?: boolean;
 }
 
 /**
@@ -190,6 +191,7 @@ export class CampaignService {
             name: campaignData.name,
             maxPoints: campaignData.maxPoints,
             language: campaignData.language,
+            allowCommentsForPeers: campaignData.allowCommentsForPeers,
             // connecting to the user
             users: {
               connect: {
@@ -364,9 +366,18 @@ export class CampaignService {
 
         // setting up variables for later checks
         const nameChanged = oldCampaign.name != campaignData.name;
+        const allowCommentsForPeersChanged =
+          oldCampaign.allowCommentsForPeers !=
+          campaignData.allowCommentsForPeers;
 
         if (campaignStatus == 'abgeschlossen') {
           throw new ForbiddenException('campaign is already closed');
+        }
+
+        if (campaignStatus != 'erstellt' && allowCommentsForPeersChanged) {
+          throw new ForbiddenException(
+            'Cannot change allowing comments for peers on opened campaigns',
+          );
         }
 
         // handling nonrelational property changes
@@ -378,6 +389,7 @@ export class CampaignService {
             name: campaignData.name,
             maxPoints: campaignData.maxPoints,
             language: campaignData.language,
+            allowCommentsForPeers: campaignData.allowCommentsForPeers,
           },
         });
 
@@ -399,6 +411,9 @@ export class CampaignService {
         };
 
         if (nameChanged) checkData.oldCampaignName = oldCampaign.name;
+
+        if (allowCommentsForPeersChanged)
+          checkData.allowCommentsForPeersChanged = allowCommentsForPeersChanged;
 
         return checkData;
       },
@@ -913,6 +928,13 @@ export class CampaignService {
           `the campaign was renamed from ${checkData.oldCampaignName} to ${campaign.name}`,
         );
       }
+
+      if (checkData.allowCommentsForPeersChanged != undefined) {
+        this.logger.log(
+          `the campaign's allow comments for peers was set to ${campaign.allowCommentsForPeers}`,
+        );
+      }
+
       if (checkData.addedGroups.length > 0) {
         this.logger.log(
           `${

@@ -38,6 +38,7 @@ export class PGTService {
    * @returns
    */
   createCampaign(campaign: Campaign) {
+    console.log('createing campaign', campaign);
     return this.http.post<Campaign>(
       environment.api + '/campaign/create',
       campaign

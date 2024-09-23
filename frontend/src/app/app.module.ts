@@ -40,6 +40,10 @@ import { GroupMetaComponent } from './group-meta/group-meta.component';
 import { CampaignButtonsComponent } from './campaign-buttons/campaign-buttons.component';
 import { CampaignStatusPipe } from './pipes/campaign-status.pipe';
 import { LanguageSwitchComponent } from './language-switch/language-switch.component';
+import { GroupCommentsComponent } from './campaign-summary/campaign-group-summary/group-comments/group-comments.component';
+import { SingleCommentComponent } from './grading/single-comment/single-comment.component';
+import { RegisterComponent } from './register/register.component';
+import { ConfirmEmailComponent } from './confirm-email/confirm-email.component';
 
 // material imports
 import { MatDialogModule } from '@angular/material/dialog';
@@ -50,10 +54,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatMenuModule } from '@angular/material/menu';
-import { GroupCommentsComponent } from './campaign-summary/campaign-group-summary/group-comments/group-comments.component';
-import { SingleCommentComponent } from './grading/single-comment/single-comment.component';
-import { RegisterComponent } from './register/register.component';
-import { ConfirmEmailComponent } from './confirm-email/confirm-email.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -109,6 +110,7 @@ import { ConfirmEmailComponent } from './confirm-email/confirm-email.component';
     MatTooltipModule,
     MatIconModule,
     MatMenuModule,
+    MatSlideToggleModule,
   ],
   providers: [
     DatePipe,

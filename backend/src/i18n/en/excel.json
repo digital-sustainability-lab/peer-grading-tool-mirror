@@ -10,6 +10,8 @@
   "status": "status",
   "maxPoints": "maximum number of points",
   "numberOfGroups": "number of groups",
+  "language": "language",
+  "P2PCommentsAllowed": "P2P comments allowed?",
   "exportDate": "date of export",
   "createdOn": "created on",
   "start": "start",

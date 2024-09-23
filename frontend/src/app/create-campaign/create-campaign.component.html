@@ -57,6 +57,22 @@
             </select>
           </div>
         </label>
+        <label>
+          <div>
+            <ng-container i18n>P2P Kommentare erlauben</ng-container>:
+            <pgt-tool-tip
+              text="P2P = Peer to Peer; Legt fest, ob Teilnehmende einer Gruppe untereinander Kommentare zusenden können. Kommentare an Dozierende sind immer aktiviert."
+              i18n-text
+            ></pgt-tool-tip>
+          </div>
+          <div class="formInputcontainer">
+            <mat-slide-toggle
+              formControlName="allowCommentsForPeers"
+              color="primary"
+              >{{ getP2PToggleString() }}</mat-slide-toggle
+            >
+          </div>
+        </label>
         @if (createCampaignService.campaignExisted()) {
         <label>
           <div><ng-container i18n>Status</ng-container>:</div>
@@ -101,7 +117,12 @@
       <div class="groupOverview">
         <h2 i18n>Gruppenübersicht</h2>
         <div>
-          <button mat-raised-button color="primary">
+          <button
+            mat-raised-button
+            color="primary"
+            matTooltip="Bitte die oberste Zeile der Vorlage für den Import nicht verändern."
+            i18n-matTooltip
+          >
             <a href="assets/template.csv" target="_blank" i18n
               >Vorlage herunterladen</a
             >

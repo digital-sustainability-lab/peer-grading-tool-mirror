@@ -158,7 +158,13 @@ export class PdfService {
     })}</b>: 1 - ${campaign.maxPoints}</p>
             <p><b>${this.i18n.t('pdf.numberOfGroups', { lang: lang })}</b>: ${
       campaign.groups.length
-    }</p>
+    }</p><p><b>${this.i18n.t('pdf.language', {
+      lang: lang,
+    })}</b>: ${campaign.language.toUpperCase()}</p><p><b>${
+      campaign.allowCommentsForPeers
+        ? this.i18n.t('pdf.P2PCommentsAllowed', { lang: lang })
+        : this.i18n.t('pdf.P2PCommentsDisallowed', { lang: lang })
+    }</b></p>
           </div>
           <div>
             <p><b>${this.i18n.t('pdf.criteria', { lang: lang })}(${this.i18n.t(
@@ -791,7 +797,10 @@ export class PdfService {
         </ul>
       </div>`;
 
-    if (review.group.comments.length > 0) {
+    if (
+      review.group.comments.length > 0 &&
+      review.campaign.allowCommentsForPeers
+    ) {
       html += this.getReviewComments(review, lang);
     }
 

@@ -6,9 +6,16 @@ import { Peer, User } from 'src/app/interfaces';
   templateUrl: './single-comment.component.html',
   styleUrl: './single-comment.component.css',
 })
-export class SingleCommentComponent {
+export class SingleCommentComponent implements OnInit {
   @Input() toUser: User;
   @Input() peer: Peer;
   @Input() commentFormGroup: any;
   @Input() isAdmin: boolean = false;
+
+  peerCommentTooltip: string;
+
+  ngOnInit(): void {
+    // prettier-ignore
+    this.peerCommentTooltip = $localize`Der eingegebene Kommentar ist sowohl für Dozierende, als auch für ${this.toUser.firstName} ${this.toUser.lastName} sichtbar.`;
+  }
 }

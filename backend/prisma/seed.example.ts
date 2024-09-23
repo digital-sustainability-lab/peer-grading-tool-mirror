@@ -69,16 +69,18 @@ async function createCampaign(
   openingDate?: Date,
   closingDate?: Date,
   language: 'de' | 'en' = 'de',
+  allowCommentsForPeers: boolean = true,
   maxPoints: number = 8,
 ) {
   return await prisma.campaign.create({
     data: {
-      name: name,
-      maxPoints: maxPoints,
-      creationDate: creationDate,
-      openingDate: openingDate,
-      closingDate: closingDate,
-      language: language,
+      name,
+      maxPoints,
+      creationDate,
+      openingDate,
+      closingDate,
+      allowCommentsForPeers,
+      language,
     },
   });
 }
@@ -126,8 +128,8 @@ async function createGroup(
 }
 
 async function createUser(
-  lastName: string,
   firstName: string,
+  lastName: string,
   email: string,
   roleIds: number[],
   campaignIds: number[],
@@ -351,6 +353,7 @@ async function main() {
     undefined,
     undefined,
     'en',
+    false,
   );
 
   const peterDummyCampaign = await createCampaign(

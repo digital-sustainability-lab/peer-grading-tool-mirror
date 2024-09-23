@@ -74,6 +74,7 @@ export const createCampaignSchema = (maxPoints: number) =>
     openingDate: Joi.date(),
     closingDate: Joi.date(),
     language: Joi.string().required(),
+    allowCommentsForPeers: Joi.boolean(),
     groups: Joi.array().items(createGroupSchema(maxPoints)).required(),
     criteria: Joi.array().items(criteriaSchema).required(),
     users: Joi.array().items(userSchema),

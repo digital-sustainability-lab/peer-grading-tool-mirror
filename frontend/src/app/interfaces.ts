@@ -6,6 +6,7 @@ export interface Campaign {
   maxPoints: number;
   openingDate?: Date;
   language: Language;
+  allowCommentsForPeers: boolean;
   closingDate?: Date;
   creationDate: Date;
   criteria: Criteria[];

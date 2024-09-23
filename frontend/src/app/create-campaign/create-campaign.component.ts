@@ -74,6 +74,7 @@ export class CreateCampaignComponent implements OnInit, DeactivatableComponent {
         [Validators.required, Validators.min(3), Validators.pattern('\\d+')],
       ],
       language: [, Validators.required],
+      allowCommentsForPeers: [, Validators.required],
     });
 
     // triggering the campaign loading in the service
@@ -111,6 +112,12 @@ export class CreateCampaignComponent implements OnInit, DeactivatableComponent {
     return !this.createCampaignService.unsavedChanges();
   }
 
+  getP2PToggleString() {
+    return this.campaignForm.controls['allowCommentsForPeers'].value
+      ? $localize`Ja`
+      : $localize`Nein`;
+  }
+
   onCampaignUpdate(campaign: Campaign, campaignStatus: CampaignStatus) {
     // this.campaign = this.createCampaignService.campaign();
     // setting the campaignForms values to the campaign
@@ -119,6 +126,7 @@ export class CreateCampaignComponent implements OnInit, DeactivatableComponent {
         name: campaign.name,
         maxPoints: campaign.maxPoints,
         language: campaign.language,
+        allowCommentsForPeers: campaign.allowCommentsForPeers,
       },
       {
         emitEvent: false,
@@ -132,6 +140,14 @@ export class CreateCampaignComponent implements OnInit, DeactivatableComponent {
     if (campaignStatus == 'läuft') {
       this.campaignForm.controls['maxPoints'].disable({ emitEvent: false });
       this.campaignForm.controls['language'].disable({ emitEvent: false });
+      this.campaignForm.controls['allowCommentsForPeers'].disable({
+        emitEvent: false,
+      });
+    }
+    if (campaignStatus == 'erstellt') {
+      this.campaignForm.enable({
+        emitEvent: false,
+      });
     }
   }
 

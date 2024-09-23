@@ -29,6 +29,15 @@
       <b><ng-container i18n>Sprache</ng-container>:&nbsp;</b>
       <span>{{ campaign.language | uppercase }}</span>
     </p>
+    <p>
+      <b>
+        @if (campaign.allowCommentsForPeers) {
+        <span i18n>P2P Kommentare erlaubt</span>
+        } @else {
+        <span i18n>P2P Kommentare nicht erlaubt</span>
+        }
+      </b>
+    </p>
   </div>
   <div>
     <p>

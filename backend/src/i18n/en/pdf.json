@@ -17,7 +17,7 @@
   "peerAssessmentExplanation": "average value of all peer assessments to you",
   "groupAverageExplanation": "average value of all peer assessments of all group members",
   "devationExplanation": "difference between peer assessment and group average",
-  "commentsRecieved": "comments recieved",
+  "commentsRecieved": "comments received",
   "author": "author",
   "comment": "comment",
 
@@ -27,6 +27,9 @@
   "start": "start",
   "end": "end",
   "numberOfGroups": "number of groups",
+  "language": "language",
+  "P2PCommentsAllowed": "P2P comments enabled",
+  "P2PCommentsDisallowed": "P2P comments disabled",
   "overviewPeerAssessmentAverageExplanation": "the <b>peer grading average</b> is the average of the peer gradings of the team member in the respective column, i.e. the average of the values without the self-assessment.",
   "overviewGroupAverageExplanation": "the <b>group average</b> is the mean value of the average of the peer gradings",
   "groupOverview": "overview of group {groupNumber}",

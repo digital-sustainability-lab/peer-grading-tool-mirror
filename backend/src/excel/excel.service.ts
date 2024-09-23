@@ -140,6 +140,18 @@ export class ExcelService {
         ? this.formatDate(campaign.closingDate, lang)
         : null,
     });
+    summarySheet.addRow({
+      col1: this.i18n.t('excel.language', {
+        lang: lang,
+      }),
+      col2: campaign.language.toUpperCase(),
+    });
+    summarySheet.addRow({
+      col1: this.i18n.t('excel.P2PCommentsAllowed', {
+        lang: lang,
+      }),
+      col2: campaign.allowCommentsForPeers ? yes : no,
+    });
 
     summarySheet.addRow({});
 
