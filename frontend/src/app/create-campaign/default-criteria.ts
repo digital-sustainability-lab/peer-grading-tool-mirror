@@ -1,4 +1,3 @@
-import { inject } from '@angular/core';
 import { Criteria } from '../interfaces';
 import { CampaignService } from 'src/app/services/campaign.service';
 

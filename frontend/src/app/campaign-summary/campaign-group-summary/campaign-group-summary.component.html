@@ -40,9 +40,8 @@
           <span class="desktop" i18n>Fremddurchschnitt</span>
           <span class="mobile" i18n>Fremddurchschnitte</span>:
           <pgt-tool-tip
-            [text]="
-              'Durchschnitt aller Fremdeinschätzungen zum Teammitglied in der jeweiligen Spalte. (Durchschnitt der Werte ohne die Selbsteinschätzung in den blauen Zellen.)'
-            "
+            text="Durchschnitt aller Fremdeinschätzungen zum Teammitglied in der jeweiligen Spalte. (Durchschnitt der Werte ohne die Selbsteinschätzung in den blauen Zellen.)"
+            i18n-text
           ></pgt-tool-tip>
         </td>
         @for (peer of group.peers; track peer) {

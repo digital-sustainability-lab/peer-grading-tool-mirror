@@ -16,7 +16,6 @@ import { PdfService } from './pdf/pdf.service';
 import { PdfController } from './pdf/pdf.controller';
 import { CalculationsService } from './calculations/calculations.service';
 import { ScheduleModule } from '@nestjs/schedule';
-import { CronJobsService } from './cron/cron-jobs.service';
 import { SendgridService } from './sendgrid/sendgrid.service';
 import { ExcelService } from './excel/excel.service';
 import { ExcelController } from './excel/excel.controller';

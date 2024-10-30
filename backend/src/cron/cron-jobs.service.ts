@@ -1,6 +1,4 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { Cron, SchedulerRegistry } from '@nestjs/schedule';
-import { CronJob } from 'cron';
 import { SendgridService } from '../sendgrid/sendgrid.service';
 import { PrismaService } from '../prisma.service';
 

@@ -2,12 +2,10 @@ import {
   Body,
   Controller,
   Get,
-  Param,
   Post,
   Req,
   Request,
   UseGuards,
-  UsePipes,
 } from '@nestjs/common';
 import { JwtRefreshGuard } from '../guards/jwt-refresh.guard';
 import { JwtAuthGuard } from '../guards/jwt-auth.guard';

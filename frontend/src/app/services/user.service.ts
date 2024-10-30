@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, Signal, WritableSignal, signal } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { map, Observable, switchMap } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { User, Campaign, UserRole, RegisterData } from '../interfaces';

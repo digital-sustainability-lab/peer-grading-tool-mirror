@@ -1,13 +1,5 @@
-import {
-  Component,
-  Input,
-  OnChanges,
-  OnInit,
-  SimpleChanges,
-} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CampaignStatus, Group, Peer } from '../../../interfaces';
-import { CreateCampaignComponent } from '../../create-campaign.component';
-import { CampaignService } from '../../../services/campaign.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CreateCampaignService } from '../../create-campaign.service';
 

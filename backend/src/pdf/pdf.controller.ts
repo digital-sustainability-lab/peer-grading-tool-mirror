@@ -3,17 +3,11 @@ import {
   Get,
   Param,
   ParseIntPipe,
-  Req,
   Request,
-  Res,
   StreamableFile,
   UseGuards,
 } from '@nestjs/common';
 import { PdfService } from './pdf.service';
-import { Response } from 'express';
-import { join } from '@prisma/client/runtime';
-import { createReadStream, unlink } from 'fs';
-import path from 'path';
 import { CampaignGuard } from '../guards/campaign.guard';
 import { JwtAuthGuard } from '../guards/jwt-auth.guard';
 import { I18n, I18nContext } from 'nestjs-i18n';

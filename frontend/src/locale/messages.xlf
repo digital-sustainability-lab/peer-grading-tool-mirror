@@ -647,6 +647,9 @@
       <trans-unit id="5982204146953564471" datatype="html">
         <source>Nein</source>
       </trans-unit>
+      <trans-unit id="483171407861775435" datatype="html">
+        <source>Durchschnitt aller Fremdeinschätzungen zum Teammitglied in der jeweiligen Spalte. (Durchschnitt der Werte ohne die Selbsteinschätzung in den blauen Zellen.)</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

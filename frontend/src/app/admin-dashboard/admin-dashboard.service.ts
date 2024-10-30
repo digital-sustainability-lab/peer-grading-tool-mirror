@@ -1,10 +1,4 @@
-import {
-  Injectable,
-  Signal,
-  WritableSignal,
-  computed,
-  signal,
-} from '@angular/core';
+import { Injectable, WritableSignal, signal } from '@angular/core';
 import { Campaign } from '../interfaces';
 import { PGTService } from '../services/pgt.service';
 import { CampaignService } from '../services/campaign.service';

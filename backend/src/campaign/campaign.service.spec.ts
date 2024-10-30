@@ -1,5 +1,4 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { Prisma } from '@prisma/client';
 import { AppService } from '../app.service';
 import { PrismaService } from '../prisma.service';
 import { SendgridService } from '../sendgrid/sendgrid.service';

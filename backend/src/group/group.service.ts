@@ -2,7 +2,6 @@ import { Injectable, Logger, NotFoundException } from '@nestjs/common';
 import { SendgridService } from '../sendgrid/sendgrid.service';
 import { PrismaService } from '../prisma.service';
 import { CalculationsService } from '../calculations/calculations.service';
-import { HttpErrorByCode } from '@nestjs/common/utils/http-error-by-code.util';
 /**
  * the group service is used for actions done by peers in the frontend
  */

@@ -1,7 +1,6 @@
 import { Injectable, WritableSignal, inject, signal } from '@angular/core';
 import { Group } from '../interfaces';
 import { CampaignService } from '../services/campaign.service';
-import { findIndex } from 'rxjs';
 
 interface LineValidation {
   valid: boolean;

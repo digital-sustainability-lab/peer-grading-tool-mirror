@@ -1,5 +1,4 @@
-import { _getEventTarget } from '@angular/cdk/platform';
-import { AfterViewChecked, Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 /**
  * the tooltip component is a component displays a box with a "?" sign
  * text is displayed when hovering over it

@@ -1,7 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
 import { CreateCampaignService } from './create-campaign.service';
-import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
