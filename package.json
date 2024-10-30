@@ -5,6 +5,6 @@
   "author": "",
   "private": true,
   "scripts": {
-    "merge-squash": "git pull && git checkout open-source-mirror && git merge --squash main && git commit -m \"merge squash main\" && git push && git checkout main"
+    "merge-squash": "git pull && git checkout open-source-mirror && git merge --squash main --strategy-option theirs && git commit -m \"merge squash main\" && git push && git checkout main"
   }
 }
